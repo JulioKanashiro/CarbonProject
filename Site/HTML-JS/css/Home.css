@@ -1,0 +1,99 @@
+
+/* banner */
+
+ .banner {
+    color: rgb(0, 0, 0);
+    padding: 10px ;
+    height: 540px;
+    background-image:  url(assets/imeto.png);
+    background-size: cover;
+   /* background-attachment: fixed;  deica a imagem do banner fixa na pagina */
+    
+}
+
+
+
+
+/* we */
+
+.navbar {
+    justify-content: flex-end;
+}
+
+.we {
+    background-color: #000000;
+    height: 1700px;
+    width:100%;
+
+    color: #ffffff;
+
+}
+
+
+.header .container {
+    width: 80%;
+    margin: auto;
+    align-items: flex-start;
+}
+.logo {
+    display: flex;
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+}
+/* h1 {
+    
+    color: #ffffff;
+    padding: 28px; 
+}*/
+.navbar {
+    display: flex;
+    width: 600px;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+    padding: 32px;
+
+}
+.navbar ul {
+    background-color: #000000;
+    justify-content: right;
+}
+li {
+    color: #ffffff;
+}
+a {
+    color: #000000;
+    text-decoration: none;
+}
+.navbar a:focus {           /*:focus é quando a tag <a> for selecionada */
+    border-bottom: solid 2px #323232;
+    border-color: white;
+}
+.header a {
+    
+    color: white;
+}
+
+
+
+*{
+    margin: 0%;
+    font-family: arial, sans-serif;
+   
+}
+
+
+.corpo {
+background-color: #290f0f;
+border-radius: 5px;
+height: 1615px;
+margin: 20px;
+margin-top: 0%;
+}
+.logo {
+    padding: 0%;
+    margin: 0px;
+    justify-content: space-between;
+}

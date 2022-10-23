@@ -1,0 +1,52 @@
+
+.header .container {
+    width: 80%;
+    margin: auto;
+    align-items: flex-start;
+}
+.logo {
+    display: flex;
+}
+.header .container {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    width: 600px;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+    padding: 32px;
+}
+.navbar ul {
+    background-color: #ffffff;
+}
+li {
+    color: #ffffff;
+}
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.navbar a:focus {           /*:focus é quando a tag <a> for selecionada */
+    border-bottom: solid 2px #3a1907 solid 3px;
+    border-color: white;
+}
+.header a {
+    
+    color: #3a1907 solid 3px;
+}
+.here {
+    font-weight: 1000;
+    color: #db0000;
+    border-bottom:white 2px solid;
+}
+
+*{
+    background-color: black ;
+    margin: 0%;
+    font-family: arial, sans-serif;
+}
