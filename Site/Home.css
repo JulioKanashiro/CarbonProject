@@ -62,10 +62,15 @@
 }
 li {
     color: #ffffff;
+
+}
+li.here{
+    border-bottom: #ffffff 2px solid;
 }
 a {
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
+    
 }
 .navbar a:focus {           /*:focus é quando a tag <a> for selecionada */
     border-bottom: solid 2px #323232;
