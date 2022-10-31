@@ -31,8 +31,10 @@
 
 .header .container {
     width: 80%;
-    margin: auto;
+    margin: 100px;
     align-items: flex-start;
+    display: flex;
+    margin-top: 10%;
 }
 
 .logo {
@@ -100,7 +102,7 @@ a {
 
 
 .corpo {
-    background-color: #290f0f;
+    background-color: #41150a;;
     border-radius: 5px;
     height: 1615px;
     margin: 20px;

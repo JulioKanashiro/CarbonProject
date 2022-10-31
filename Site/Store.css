@@ -1,7 +1,7 @@
 .banner {
     color: rgb(0, 0, 0);
     padding: 10px ;
-    height: 1950px;
+    height: 1430px;
     background-color: black;
     background-size: cover;
    /* background-attachment: fixed;  deica a imagem do banner fixa na pagina */
@@ -62,19 +62,35 @@ a {
 }
 
 .tittle {
-background-color: #ffffff;
+
 height: 100px;
 width: 90%;
-margin-top: 20px;
+margin-top: 5spx;
 border-top-left-radius: 5px;
 border-top-right-radius: 5px;
 margin-left: 5%; 
+color: #ffffff;
+font-size: 60px;
+
 }
+.tittle .cs{
+   
+    height: 30px;
+    width: 50%;
+    color: #ffffff;
+    font-size: 60px;
+    justify-items: center;
+    align-self:  center;
+    margin-top: 10px;
+    margin-left: 33%;
+    padding-top: 20px;
+    font-stretch: expanded;
+    }
 .box {
     
-    background-color: #290f0f;
+    
     border-radius: 5px;
-    height: 1615px;
+    height: 1115px;
     margin-left: 20px;
     margin-right: 20px;
     display: flex;
@@ -93,7 +109,7 @@ margin-left: 5%;
     display: flex;
     width: 100%;
     height: 250px;
-   
+    
     justify-content: space-between;
 }
 
@@ -132,93 +148,30 @@ margin-left: 5%;
     justify-content: space-between;
 }
 
-.not1-1 {
-    border: green solid  2px;
+.product {
+    border-radius: 12px;
     width: 32%;
     height: 100%;
+    background-image: url(assets/af1.png);
+    background-size: cover;
+    border:  #ffffff 5px solid;
+    display: flex;
 }
-.not1-2 {
-    border: green solid  2px;
-    width: 32%;
-    height: 100%;
-}
-.not1-3 {
-    border: green solid  2px;
-    width: 32%;
-    height: 100%;
-}
-.not2-1 {
-    border: green solid  2px;
-    width: 32%;
-    height: 100%;
-}
-.not2-2 {
-    border: green solid  2px;
-    width: 32%;
-    height: 100%;
-}
-.not2-3 {
-    border: green solid  2px;
-    width: 32%;
-    height: 100%;
-}
-.not3-1 {
-    border: green solid  2px;
-    width: 32%;
-    height: 100%;
-}
-.not3-2 {
-    border: green solid  2px;
-    width: 32%;
-    height: 100%;
-}
-.not3-3 {
-    border: green solid  2px;
-    width: 32%;
-    height: 100%;
-}
-.not4-1 {
-    border: green solid  2px;
-    width: 32%;
-    height: 100%;
-}
-.not4-2 {
-    border: green solid  2px;
-    width: 32%;
-    height: 100%;
-}
-.not4-3 {
-    border: green solid  2px;
-    width: 32%;
-    height: 100%;
-}
-.not5-1 {
-    border: green solid  2px;
-    width: 32%;
-    height: 100%;
-}
-.not5-2 {
-    border: green solid  2px;
-    width: 32%;
-    height: 100%;
-}
-.not5-3 {
-    border: green solid  2px;
-    width: 32%;
-    height: 100%;
-}
-.not6-1 {
-    border: green solid  2px;
-    width: 32%;
-    height: 100%;
-}
-.not6-2 {
-    border: green solid  2px;
-    width: 32%;
-    height: 100%;
-}
-.not6-3 {
-    border: green solid  2px;
-    width: 32%;
-    height: 100%;
+ 
+
+
+
+.price {
+margin-top: 6px;
+margin-left: 6px;
+ width: 130px;
+ height: 35px;
+ background-color: #41150a;;
+ color: #ffffff;
+ border-radius: 12px;
+ border:#ffffff 2px solid;
+ display: flex;
+justify-content: center;
+flex-direction: row;
+align-items: center;
 }
