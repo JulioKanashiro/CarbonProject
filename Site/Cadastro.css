@@ -1,7 +1,7 @@
 .banner {
     color: rgb(0, 0, 0);
     padding: 10px ;
-    height: 760px;
+    height: 860px;
     background-color: black;
     background-size: cover;
    /* background-attachment: fixed;  deica a imagem do banner fixa na pagina */
@@ -67,7 +67,7 @@ a {
     align-items: flex-end;
     align-content: center;
     color: #41150a;
-    height: 530px;
+    height: 630px;
     width: 450px;
     border-radius: 8px;
     margin-left: 53%;
@@ -89,7 +89,7 @@ a {
     justify-content: space-around;
     display: flex;
     margin-bottom: 15px;
-    
+    padding: 10px;
 
    
 }
