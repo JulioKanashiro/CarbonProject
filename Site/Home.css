@@ -116,7 +116,10 @@ a {
 
 .logo {
     padding: 0%;
-    margin: 0px;
+    margin-top: 18px;
     justify-content: space-between;
+    display: flex;
+ margin-right: 5%;
+ margin-left: 5%;
 }
 
