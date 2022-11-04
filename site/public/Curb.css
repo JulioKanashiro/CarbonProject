@@ -1,8 +1,8 @@
 .banner {
     color: rgb(0, 0, 0);
     padding: 10px ;
-    height: 1430px;
-    background-color: black;
+    height: 1900px;
+    background-color: rgba(255, 0, 0, 0.945);
     background-size: cover;
    /* background-attachment: fixed;  deica a imagem do banner fixa na pagina */
     
@@ -90,9 +90,8 @@ display: flex;
     }
 .box {
     
-    
     border-radius: 5px;
-    height: 1115px;
+    height: 1615px;
     margin-left: 20px;
     margin-right: 20px;
     display: flex;
@@ -113,69 +112,97 @@ display: flex;
     display: flex;
     width: 100%;
     height: 250px;
-    
+    border: 4px white solid;
     justify-content: space-between;
+    border-radius: 18px;   
+    position:relative;padding:4px;
+    background-color: #ff000085;
+
 }
 
 .not2 {
     display: flex;
     width: 100%;
     height: 250px;
+    border: 4px white solid;
     justify-content: space-between;
+    border-radius: 18px;
+    position:relative;
+    padding:4px;
+   margin-top: 24px; 
+   background-color: #ff000085;
 }
 
 .not3 {
     display: flex;
     width: 100%;
     height: 250px;
+    border: 4px white solid;
     justify-content: space-between;
+    border-radius: 18px;
+    position:relative;padding:4px;
+    margin-top: 24px; 
+    background-color: #ff000085;
 }
+
 
 .not4 {
     display: flex;
     width: 100%;
     height: 250px;
+    border: 4px white solid;
     justify-content: space-between;
+    border-radius: 18px;
+    position:relative;padding:4px;
+    margin-top: 24px; 
+    background-color: #ff000085;
 }
 
 .not5 {
     display: flex;
     width: 100%;
     height: 250px;
+    border: 4px white solid;
     justify-content: space-between;
+    border-radius: 18px;
+    position:relative;
+    padding:4px;
+    margin-top: 24px; 
+    background-color: #ff000085;
 }
 
 .not6 {
     display: flex;
     width: 100%;
     height: 250px;
+    border: 4px white solid;
     justify-content: space-between;
+    border-radius: 18px;
+    position:relative;
+    padding:4px;
+    background-color: #ff000085;
+    margin-top: 24px; 
 }
 
 .product {
     border-radius: 12px;
     width: 32%;
-    height: 100%;
+    height: 92%;
     background-image: url(assets/Kendrick-Lamar.png);
     background-size: cover;
     border:  #ffffff 5px solid;
     display: flex;
+    margin: 5px;
+   
+    
 }
  
+.not1:hover{top:-20px;box-shadow:0 10px 20px rgb(85, 11, 11)}
+.not2:hover{top:-20px;box-shadow:0 10px 20px rgb(85, 11, 11)}
+.not3:hover{top:-20px;box-shadow:0 10px 20px rgb(85, 11, 11)}
+.not4:hover{top:-20px;box-shadow:0 10px 20px rgb(85, 11, 11)}
+.not5:hover{top:-20px;box-shadow:0 10px 20px rgb(85, 11, 11)}
+.not6:hover{top:-20px;box-shadow:0 10px 20px rgb(85, 11, 11)}
 
 
 
-.price {
-margin-top: 6px;
-margin-left: 6px;
- width: 130px;
- height: 35px;
- background-color: #41150a;;
- color: #ffffff;
- border-radius: 12px;
- border:#ffffff 2px solid;
- display: flex;
-justify-content: center;
-flex-direction: row;
-align-items: center;
-}
