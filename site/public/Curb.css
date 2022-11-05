@@ -2,7 +2,7 @@
     color: rgb(0, 0, 0);
     padding: 10px ;
     height: 1900px;
-    background-color: rgba(255, 0, 0, 0.945);
+    background-color: rgb(80, 5, 5);
     background-size: cover;
    /* background-attachment: fixed;  deica a imagem do banner fixa na pagina */
     
@@ -104,105 +104,193 @@ display: flex;
 .footer {
     color: #ffffff;
     padding-bottom: 1%;
-    background-color: #000000;
+    background-color: rgb(80, 5, 5);
    
 }
     
 .not1 {
     display: flex;
     width: 100%;
-    height: 250px;
-    border: 4px white solid;
+    height: 400px;
+    border: 4px rgb(255, 255, 255) solid;
     justify-content: space-between;
     border-radius: 18px;   
-    position:relative;padding:4px;
-    background-color: #ff000085;
-
+    position:relative;
+    padding:4px;
+    background-color: #0000004b;
+    justify-items: center;
+   color: #ffffff;
 }
 
 .not2 {
     display: flex;
     width: 100%;
-    height: 250px;
+    height: 400px;
     border: 4px white solid;
     justify-content: space-between;
     border-radius: 18px;
     position:relative;
     padding:4px;
    margin-top: 24px; 
-   background-color: #ff000085;
+   background-color: #0000004b;
 }
 
 .not3 {
     display: flex;
     width: 100%;
-    height: 250px;
+    height:400px;
     border: 4px white solid;
     justify-content: space-between;
     border-radius: 18px;
     position:relative;padding:4px;
     margin-top: 24px; 
-    background-color: #ff000085;
+    background-color: #0000004b;
 }
 
 
 .not4 {
     display: flex;
     width: 100%;
-    height: 250px;
+    height: 400px;
     border: 4px white solid;
     justify-content: space-between;
     border-radius: 18px;
     position:relative;padding:4px;
     margin-top: 24px; 
-    background-color: #ff000085;
+    background-color: #0000004b;
 }
 
 .not5 {
     display: flex;
     width: 100%;
-    height: 250px;
+    height: 400px;
     border: 4px white solid;
     justify-content: space-between;
     border-radius: 18px;
     position:relative;
     padding:4px;
     margin-top: 24px; 
-    background-color: #ff000085;
+    background-color: #0000004b;
 }
 
 .not6 {
     display: flex;
     width: 100%;
-    height: 250px;
+    height: 400px;
     border: 4px white solid;
     justify-content: space-between;
     border-radius: 18px;
     position:relative;
     padding:4px;
-    background-color: #ff000085;
+    background-color: #0000004b;
     margin-top: 24px; 
 }
 
-.product {
+
+.product1 {
     border-radius: 12px;
     width: 32%;
     height: 92%;
-    background-image: url(assets/Kendrick-Lamar.png);
+    background-image: url(assets/Sem\ título\ ‑\ Made\ with\ FlexClip\ \(1\).gif);
     background-size: cover;
     border:  #ffffff 5px solid;
     display: flex;
     margin: 5px;
+
    
     
 }
  
-.not1:hover{top:-20px;box-shadow:0 10px 20px rgb(85, 11, 11)}
-.not2:hover{top:-20px;box-shadow:0 10px 20px rgb(85, 11, 11)}
-.not3:hover{top:-20px;box-shadow:0 10px 20px rgb(85, 11, 11)}
-.not4:hover{top:-20px;box-shadow:0 10px 20px rgb(85, 11, 11)}
-.not5:hover{top:-20px;box-shadow:0 10px 20px rgb(85, 11, 11)}
-.not6:hover{top:-20px;box-shadow:0 10px 20px rgb(85, 11, 11)}
+.not1:hover{top:-20px; 
+    box-shadow:0 10px 20px rgb(0, 0, 0);
+    -webkit-filter:sepia(38%);
+     transition: 1s;}
+     .not2:hover{top:-20px; 
+        box-shadow:0 10px 20px rgb(0, 0, 0);
+        -webkit-filter:sepia(38%);
+         transition: 1s;}
+         .not3:hover{top:-20px; 
+            box-shadow:0 10px 20px rgb(0, 0, 0);
+            -webkit-filter:sepia(38%);
+             transition: 1s;}
+             .not4:hover{top:-20px; 
+                box-shadow:0 10px 20px rgb(0, 0, 0);
+                -webkit-filter:sepia(38%);
+                 transition: 1s;}
+                 .not5:hover{top:-20px; 
+                    box-shadow:0 10px 20px rgb(0, 0, 0);
+                    -webkit-filter:sepia(38%);
+                     transition: 1s;}
+                     .not6:hover{top:-20px; 
+                        box-shadow:0 10px 20px rgb(0, 0, 0);
+                        -webkit-filter:sepia(38%);
+                         transition: 1s;}
+                         
 
 
+.product2 {
+    border-radius: 12px;
+    width: 32%;
+    height: 92%;
+    background-image: url(assets/noticia2-kobe.gif);
+    background-size: cover;
+    border:  #ffffff 5px solid;
+    display: flex;
+    margin: 5px;}
+    
+.product3 {
+    border-radius: 12px;
+    width: 32%;
+    height: 92%;
+    background-image: url(assets/cidadededeus.png);
+    background-size: cover;
+    border:  #ffffff 5px solid;
+    display: flex;
+    margin: 5px;}
 
+
+    
+.product4 {
+    border-radius: 12px;
+    width: 32%;
+    height: 92%;
+    background-image: url(assets/noticia4-spfc.gif);
+    background-size: cover;
+    border:  #ffffff 5px solid;
+    display: flex;
+    margin: 5px;
+}
+.product5 {
+    border-radius: 12px;
+    width: 32%;
+    height: 92%;
+    background-image: url(assets/not5-Quadros.gif);
+    background-size: cover;
+    border:  #ffffff 5px solid;
+    display: flex;
+    margin: 5px;
+}
+.product6 {
+    border-radius: 12px;
+    width: 32%;
+    height: 92%;
+    background-image: url(assets/not6-neuralink.jpg);
+    background-size: cover;
+    border:  #ffffff 5px solid;
+    display: flex;
+    margin: 5px;
+}
+.resumo1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 66%;
+}
+.tittle1 {
+   
+   margin-left: 40%;
+    height: 10%;
+    width: 100%;
+    color: #ffffff;
+}
