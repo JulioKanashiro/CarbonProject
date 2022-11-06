@@ -66,7 +66,7 @@ a {
     justify-items: center;
     align-items: flex-end;
     align-content: center;
-    color: #ff0000;
+    color: rgb(80, 5, 5);
     height: 530px;
     width: 450px;
     border-radius: 8px;
@@ -94,7 +94,7 @@ a {
    
 }
 .button {
-        background-color: #ff0000;
+        background-color: rgb(80, 5, 5);;
         height: 50px;
         width: 250px;
         margin-left: 4%;
@@ -103,6 +103,10 @@ a {
         margin-top: 33px;
         color: #ffffff;
 }
+.button:hover{top:-20px; 
+    box-shadow:0 8px 20px rgb(0, 0, 0);
+    -webkit-filter:sepia(38%);
+     transition: 1s;}
 .box {
     margin-left: 20%;
 }
@@ -130,7 +134,7 @@ div.senha {
    padding-bottom: 1%;
 }
 .redes{
-    background-color: #ff0000;
+    background-color: rgb(80, 5, 5);;
     height: 400px;
     width: 100px;
     border-radius: 5px;

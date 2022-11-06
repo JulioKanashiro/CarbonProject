@@ -236,7 +236,8 @@ display: flex;
     background-size: cover;
     border:  #ffffff 5px solid;
     display: flex;
-    margin: 5px;}
+    margin: 5px;
+}
     
 .product3 {
     border-radius: 12px;
@@ -280,17 +281,52 @@ display: flex;
     display: flex;
     margin: 5px;
 }
-.resumo1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 66%;
-}
+
 .tittle1 {
-   
-   margin-left: 40%;
-    height: 10%;
-    width: 100%;
-    color: #ffffff;
+   display: inline;
+   height: 68%;
+   width: 60%;
+   color: #ffffff;
+   margin-top: 80px;
+  margin-left: 70px ;
 }
+.tittle2 {
+    display: inline;
+    height: 68%;
+    width: 60%;
+    color: #ffffff;
+    margin-top: 80px;
+   margin-left: 70px ;
+ }
+ .tittle3 {
+    display: inline;
+    height: 68%;
+    width: 60%;
+    color: #ffffff;
+    margin-top: 80px;
+   margin-left: 70px ;
+ }
+ .tittle4 {
+    display: inline;
+    height: 68%;
+    width: 60%;
+    color: #ffffff;
+    margin-top: 80px;
+   margin-left: 70px ;
+ }
+ .tittle5 {
+    display: inline;
+    height: 68%;
+    width: 60%;
+    color: #ffffff;
+    margin-top: 80px;
+   margin-left: 70px ;
+ }
+ .tittle6 {
+    display: inline;
+    height: 68%;
+    width: 60%;
+    color: #ffffff;
+    margin-top: 80px;
+   margin-left: 70px ;
+ }
