@@ -123,3 +123,16 @@ a {
  margin-left: 5%;
 }
 
+body::-webkit-scrollbar {
+    width: 18px;              
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);       
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.24);  
+    border-radius: 1px;      
+   ;    
+  }
