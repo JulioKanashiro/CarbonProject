@@ -1,19 +1,11 @@
-/* banner */
-
 .banner {
     color: rgb(0, 0, 0);
     padding: 10px;
     height: 540px;
     background-image: url(assets/imeto.png);
     background-size: cover;
-    /* background-attachment: fixed;  deica a imagem do banner fixa na pagina */
-
 }
 
-
-
-
-/* we */
 
 .navbar {
     justify-content: flex-end;
@@ -46,11 +38,7 @@
     justify-content: space-between;
 }
 
-/* h1 {
-    
-    color: #ffffff;
-    padding: 28px; 
-}*/
+
 .navbar {
     display: flex;
     width: 600px;
@@ -82,7 +70,7 @@ a {
 }
 
 .navbar a:focus {
-    /*:focus é quando a tag <a> for selecionada */
+   
     border-bottom: solid 2px #323232;
     border-color: white;
 }
@@ -102,13 +90,13 @@ a {
 
 
 .corpo {
-   
+   border-color: #ffffff;
     border-radius: 5px;
     height: 550px;
     margin: 20px;
     margin-top: 0%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 10px;
    
 
@@ -130,6 +118,7 @@ a {
     height: 250px;
     
 }
+
 .box-not1 {
     border-radius: 5px;
     height: 1115px;
@@ -178,13 +167,13 @@ a {
 }
 
 
-.product1:hover{top:-90px; 
+.product1:hover{top:90px; 
     box-shadow:0 8px 20px rgb(75, 72, 72);
     -webkit-filter:opacity(40%) ;
      transition: 1s;
     
     }
-    .product2:hover .atleta{top:-90px; 
+    .product2:hover{top:-90px; 
         box-shadow:0 8px 20px rgb(75, 72, 72);
         -webkit-filter:opacity(30%) ;
          transition: 1s;
@@ -199,8 +188,42 @@ a {
                 -webkit-filter:opacity(30%) ;
                  transition: 1s;
                 }
-
-              
+.box-not1 {
+    height: 400px;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+}          
                   
                  
-               
+.tittle-atleta-ano {
+    margin-top: 5%;
+    font-size: x-large;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}          
+
+.product1:hover {
+    width: 150%;
+    height: 93%;
+    background-color: #7e0303;
+}
+
+.product2:hover {
+    width: 150%;
+    height: 93%;
+    background-color: #7e0303;
+}
+.product3:hover {
+    width: 150%;
+    height: 93%;
+    background-color: #7e0303;
+}
+.product4:hover {
+    width: 150%;
+    height: 93%;
+    background-color: #7e0303;
+}
+
