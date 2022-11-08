@@ -55,7 +55,7 @@ a {
 }
 
 *{
-
+  
     margin: 0%;
     font-family: arial, sans-serif;
 }
@@ -163,3 +163,10 @@ body::-webkit-scrollbar {
     color:rgb(80, 5, 5);
    
   }
+  .footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-top: 1px solid#181212;
+ }
