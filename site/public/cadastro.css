@@ -159,3 +159,7 @@ body::-webkit-scrollbar {
     border: 1px solid rgb(0, 0, 0);  
   }
  
+  .link a{
+    color:rgb(80, 5, 5);
+   
+  }

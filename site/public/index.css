@@ -13,9 +13,11 @@
 
 .we {
     background-color: #000000;
-    height: 1700px;
+    height: 2000px;
     width: 100%;
-
+    display: flex;
+    justify-content: center;
+    
     color: #ffffff;
 
 }
@@ -90,12 +92,12 @@ a {
 
 
 .corpo {
-   border-color: #ffffff;
+    width: 100%;
     border-radius: 5px;
-    height: 550px;
+    height: 1550px;
     margin: 20px;
     margin-top: 0%;
-    display: flex;
+    display: inline;
     justify-content: center;
     padding: 10px;
    
@@ -116,10 +118,10 @@ a {
     display: flex;
     width: 100%;
     height: 250px;
-    
+    justify-content: center;
 }
 
-.box-not1 {
+.box-not {
     border-radius: 5px;
     height: 1115px;
     padding: 10px;
@@ -167,28 +169,27 @@ a {
 }
 
 
-.product1:hover{top:90px; 
-    box-shadow:0 8px 20px rgb(75, 72, 72);
-    -webkit-filter:opacity(40%) ;
-     transition: 1s;
-    
-    }
-    .product2:hover{top:-90px; 
-        box-shadow:0 8px 20px rgb(75, 72, 72);
-        -webkit-filter:opacity(30%) ;
-         transition: 1s;
-        }
-        .product3:hover{top:-90px; 
-            box-shadow:0 8px 20px rgb(75, 72, 72);
-            -webkit-filter:opacity(30%) ;
-             transition: 1s;
-            }
-            .product4:hover{top:-90px; 
-                box-shadow:0 8px 20px rgb(75, 72, 72);
-                -webkit-filter:opacity(30%) ;
-                 transition: 1s;
-                }
-.box-not1 {
+.product1:hover{
+box-shadow:0 8px 20px rgb(75, 72, 72);
+-webkit-filter:opacity(40%) ;
+ transition: 2s;
+}
+.product2:hover{
+ box-shadow:0 8px 20px rgb(75, 72, 72);
+ -webkit-filter:opacity(30%) ;
+ transition: 2s;
+}
+.product3:hover{ 
+ box-shadow:0 8px 20px rgb(75, 72, 72);
+-webkit-filter:opacity(30%) ;
+transition: 2s;
+}
+.product4:hover{
+ box-shadow:0 8px 20px rgb(75, 72, 72);
+ -webkit-filter:opacity(30%) ;
+transition: 2s;
+}
+.box-not {
     height: 400px;
     display: inline;
     justify-content: center;
@@ -206,24 +207,137 @@ a {
 }          
 
 .product1:hover {
-    width: 150%;
+    width: 50%;
     height: 93%;
     background-color: #7e0303;
 }
 
 .product2:hover {
-    width: 150%;
+    width: 50%;
     height: 93%;
     background-color: #7e0303;
 }
 .product3:hover {
-    width: 150%;
+    width: 50%;
     height: 93%;
     background-color: #7e0303;
 }
 .product4:hover {
-    width: 150%;
+    width: 50%;
     height: 93%;
     background-color: #7e0303;
 }
 
+.product1-2 {
+    border-radius: 12px;
+    width: 230px;
+    height: 230px;
+    background-image: url(assets/nopefilm.jpg);
+    background-size: cover;
+    border:  #ffffff 1px solid;
+  margin: 30px;
+}
+.product2-2 {
+    border-radius: 12px;
+    width: 230px;
+    height: 230px;
+    background-image: url(assets/aqotwjpg.jpg);
+    background-size: cover;
+    border:  #ffffff 1px solid;
+  margin: 30px;
+  
+}
+.product3-2 {
+    border-radius: 12px;
+    width: 230px;
+    height: 230px;
+    background-image: url(assets/top-gun-maverick.jpg);
+    background-size: cover;
+    border:  #ffffff 1px solid;
+  margin: 30px;
+}
+.product4-2 {
+    border-radius: 12px;
+    width: 230px;
+    height: 230px;
+    background-image: url(assets/the-batman-2022-movies-dc-comics-red-background-5k-5k-7680x4320-7477.jpg);
+    background-size: cover;
+    border:  #ffffff 1px solid;
+  margin: 30px;
+}
+
+
+.product1-2:hover{top:90px; 
+    box-shadow:0 8px 20px rgb(75, 72, 72);
+    -webkit-filter:opacity(40%) ;
+     transition: 1s;
+    
+    }
+    .product2-2:hover{top:-90px; 
+        box-shadow:0 8px 20px rgb(75, 72, 72);
+        -webkit-filter:opacity(30%) ;
+         transition: 1s;
+        }
+        .product3-2:hover{top:-567px; 
+            box-shadow:0 8px 20px rgb(75, 72, 72);
+            -webkit-filter:opacity(30%) ;
+             transition: 1s;
+            }
+            .product4-2:hover{top:-90px; 
+                box-shadow:0 8px 20px rgb(75, 72, 72);
+                -webkit-filter:opacity(30%) ;
+                 transition: 1s;
+                }
+
+                
+                
+                
+                .product1-2:hover {
+                    width: 50%;
+                    height: 93%;
+                    background-color: #7e0303;
+                }
+                
+                .product2-2:hover {
+                    width: 50%;
+                    height: 93%;
+                    background-color: #7e0303;
+                }
+                .product3-2:hover {
+                    width: 50%;
+                    height: 93%;
+                    background-color: #7e0303;
+                }
+                .product4-2:hover {
+                    width: 50%;
+                    height: 93%;
+                    background-color: #7e0303;
+                }
+                
+.h1-premiacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+button{
+    background-color: #b31313;
+    width: 350px;
+    height: 100px;
+    border-radius: 20px;
+    border-right: #d8a9a9 1px solid;
+    border-bottom: #d8a9a9 2px solid;
+    color: #ffffff;
+    font-size: x-large;
+}
+.btn{
+    margin-top: 8%;
+    margin-left: 38%;
+}
+.btn:hover{
+ -webkit-filter:opacity(30%) ;
+     transition: 1s;
+}
+button:active{
+    background-color: #ff0000;
+ }
