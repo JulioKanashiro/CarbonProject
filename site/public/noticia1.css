@@ -1,8 +1,8 @@
 .banner {
     color: rgb(0, 0, 0);
     padding: 10px ;
-    height: 650px;
-    background-color: black;
+    height: 2000px;
+    background: rgb(31, 2, 2);
     background-size: cover;
    /* background-attachment: fixed;  deica a imagem do banner fixa na pagina */
     
@@ -63,17 +63,110 @@ a {
     .footer {
         color: #ffffff;
         padding-top: 15px;
-        background-color: #000000;
+        background-color: rgb(31, 2, 2);;
        padding-bottom: 1%;
+       border-top: 1px rgb(0, 0, 0) solid;
     }
 
-    .carousel {
-        display: grid;
-        grid-auto-flow: column;
-        scroll-behavior:auto;
-        gap: 1.2rem;
-        overflow-y: auto;
-        overscroll-behavior-x: contain;
-        scroll-snap-type: x mandatory;
-        scrollbar-width: none;
+    * {box-sizing:border-box}
+
+    /* Slideshow container */
+    .slideshow-container {
+      height: 350px;
+        width: 53%;
+      position: relative;
+      margin-top: 60px;
+     
     }
+    
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+    
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 39%;
+      width: auto;
+      padding: 24px;
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      font-size: 48px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      margin-bottom: 20px;
+
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+     
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0, 0, 0, 0.397);
+    }
+    
+
+
+    
+    .active, .dot:hover {
+      background-color: #a37f7f;
+    }
+    
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+    .slideshow-container img{
+        border-radius: 4px;
+        margin: 0px;
+        border: 3px white solid;
+        display: flex;
+       margin-right: 3%;
+    }
+    .box {
+        width: auto;
+      display: flex;
+       justify-content: center;
+    }
+    .tittle1 {
+        display: inline;
+        height: 68%;
+        width: 60%;
+        color: #ffffff;
+        margin-top: 80px;
+       margin-left: 70px ;
+       font-size: xx-large;
+     }
+     .materia{
+        color: #ffffff;
+        padding: 6%;
+        padding-top: 10%;
+       
+     }
+     .plataform {
+     display: inline;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: #ffffff;
+     font-size: x-large;
+
+     }
+     .plataform img{
+        height: 280px;
+        width: 280px;
+        }
