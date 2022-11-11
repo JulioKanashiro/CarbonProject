@@ -1,9 +1,10 @@
 .banner {
     color: rgb(255, 255, 255);
     padding: 10px ;
-    height: 860px;
+    height: 900px;
     background-color: black;
-    background-size: cover;}
+    background-size: cover;
+    }
    
     .header .container {
     width: 80%;
@@ -130,7 +131,12 @@ div.senha {
     color: #ffffff;
     padding-top: 15px;
     background-color: #000000;
-   padding-bottom: 1%;
+    margin-top: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top:23%;
+   border-top: 1px solid#181212;
 }
 .redes{
     background-color: rgb(80, 5, 5);;
@@ -163,10 +169,3 @@ body::-webkit-scrollbar {
     color:rgb(80, 5, 5);
    
   }
-  .footer {
-    background-color: #000000;
-    color: #ffffff;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    border-top: 1px solid#181212;
- }
