@@ -2,7 +2,7 @@
     color: rgb(0, 0, 0);
     padding: 10px;
     height: 540px;
-    background-image: url(assets/imeto.png);
+    background-image: url(../assets/imeto.png);
     background-size: cover;
 }
 
@@ -134,7 +134,7 @@ a {
     border-radius: 12px;
     width: 230px;
     height: 230px;
-    background-image: url(assets/TH_Curry-Night-Night.jpg);
+    background-image: url(../assets/TH_Curry-Night-Night.jpg);
     background-size: cover;
     border:  #ffffff 1px solid;
   margin: 30px;
@@ -143,7 +143,7 @@ a {
     border-radius: 12px;
     width: 230px;
     height: 230px;
-    background-image: url(assets/Karim-Benzema-Vs-PSG.jpeg);
+    background-image: url(../assets/Karim-Benzema-Vs-PSG.jpeg);
     background-size: cover;
     border:  #ffffff 1px solid;
   margin: 30px;
@@ -153,7 +153,7 @@ a {
     border-radius: 12px;
     width: 230px;
     height: 230px;
-    background-image: url(assets/lebron-james.jpeg);
+    background-image: url(../assets/lebron-james.jpeg);
     background-size: cover;
     border:  #ffffff 1px solid;
   margin: 30px;
@@ -162,7 +162,7 @@ a {
     border-radius: 12px;
     width: 230px;
     height: 230px;
-    background-image: url(assets/vinijr.jpg);
+    background-image: url(../assets/vinijr.jpg);
     background-size: cover;
     border:  #ffffff 1px solid;
   margin: 30px;
@@ -171,22 +171,22 @@ a {
 
 .product1:hover{
 box-shadow:0 8px 20px rgb(75, 72, 72);
--webkit-filter:opacity(40%) ;
+filter:opacity(40%) ;
  transition: 2s;
 }
 .product2:hover{
  box-shadow:0 8px 20px rgb(75, 72, 72);
- -webkit-filter:opacity(30%) ;
+ filter:opacity(30%) ;
  transition: 2s;
 }
 .product3:hover{ 
  box-shadow:0 8px 20px rgb(75, 72, 72);
--webkit-filter:opacity(30%) ;
+filter:opacity(30%) ;
 transition: 2s;
 }
 .product4:hover{
  box-shadow:0 8px 20px rgb(75, 72, 72);
- -webkit-filter:opacity(30%) ;
+ filter:opacity(30%) ;
 transition: 2s;
 }
 .box-not {
@@ -231,7 +231,7 @@ transition: 2s;
     border-radius: 12px;
     width: 230px;
     height: 230px;
-    background-image: url(assets/nopefilm.jpg);
+    background-image: url(../assets/nopefilm.jpg);
     background-size: cover;
     border:  #ffffff 1px solid;
   margin: 30px;
@@ -240,7 +240,7 @@ transition: 2s;
     border-radius: 12px;
     width: 230px;
     height: 230px;
-    background-image: url(assets/aqotwjpg.jpg);
+    background-image: url(../assets/aqotwjpg.jpg);
     background-size: cover;
     border:  #ffffff 1px solid;
   margin: 30px;
@@ -250,7 +250,7 @@ transition: 2s;
     border-radius: 12px;
     width: 230px;
     height: 230px;
-    background-image: url(assets/top-gun-maverick.jpg);
+    background-image: url(../assets/top-gun-maverick.jpg);
     background-size: cover;
     border:  #ffffff 1px solid;
   margin: 30px;
@@ -259,33 +259,37 @@ transition: 2s;
     border-radius: 12px;
     width: 230px;
     height: 230px;
-    background-image: url(assets/the-batman-2022-movies-dc-comics-red-background-5k-5k-7680x4320-7477.jpg);
+    background-image: url(../assets/the-batman-2022-movies-dc-comics-red-background-5k-5k-7680x4320-7477.jpg);
     background-size: cover;
     border:  #ffffff 1px solid;
   margin: 30px;
 }
 
 
-.product1-2:hover{top:90px; 
-    box-shadow:0 8px 20px rgb(75, 72, 72);
-    -webkit-filter:opacity(40%) ;
-     transition: 1s;
+.product1-2:hover{
+    width: 50%;
+                height: 93%;
+                filter:opacity(30%);
+                transition: 1s;
     
     }
-    .product2-2:hover{top:-90px; 
-        box-shadow:0 8px 20px rgb(75, 72, 72);
-        -webkit-filter:opacity(30%) ;
-         transition: 1s;
+    .product2-2:hover{ 
+        width: 50%;
+        height: 93%;
+        filter:opacity(30%);
+        transition: 1s;
         }
         .product3-2:hover{top:-567px; 
-            box-shadow:0 8px 20px rgb(75, 72, 72);
-            -webkit-filter:opacity(30%) ;
-             transition: 1s;
+            width: 50%;
+            height: 93%;
+            filter:opacity(30%);
+            transition: 1s;
             }
             .product4-2:hover{top:-90px; 
-                box-shadow:0 8px 20px rgb(75, 72, 72);
-                -webkit-filter:opacity(30%) ;
-                 transition: 1s;
+                width: 50%;
+                height: 93%;
+                filter:opacity(30%);
+                transition: 1s;
                 }
 
                 
@@ -293,24 +297,28 @@ transition: 2s;
                 
                 .product1-2:hover {
                     width: 50%;
-                    height: 93%;
-                    background-color: #7e0303;
+                height: 93%;
+                filter:opacity(30%);
+                transition: 1s;
                 }
                 
                 .product2-2:hover {
                     width: 50%;
-                    height: 93%;
-                    background-color: #7e0303;
+                height: 93%;
+                filter:opacity(30%);
+                transition: 1s;
                 }
                 .product3-2:hover {
                     width: 50%;
                     height: 93%;
-                    background-color: #7e0303;
+                    filter:opacity(30%);
+                    transition: 1s;
                 }
                 .product4-2:hover {
                     width: 50%;
                     height: 93%;
-                    background-color: #7e0303;
+                    filter:opacity(30%);
+                    transition: 1s;
                 }
                 
 .h1-premiacao {
@@ -319,17 +327,19 @@ transition: 2s;
     align-items: center;
     font-size: 30px;
     height: 60px;
-    width: 23%;
-    background: #ffffff;
-    color: rgb(0, 0, 0);
+    width: 53%;
+    background: #3b05055b;
+    color: rgb(255, 0, 0);
     font-size: xx-large;
     border-radius: 15px;
-    margin-left: 38%;
-    border-bottom: #323232 3px solid;
-    border-right: #323232 2px solid ;
+    margin-left: 24%;
+    border-bottom: #ff0000 4px solid;
+    border-right: #ff0000 4px solid ;
+    border-top:#ff0000 1px solid ;
+    border-left:#ff0000 1px solid ;
 }
 button{
-    background-color: #db2121;
+    background-color: #ff0000;
     width: 350px;
     height: 100px;
     border-radius: 20px;
@@ -343,19 +353,19 @@ button{
     margin-left: 36%;
 }
 button:hover{
- -webkit-filter:opacity(30%) ;
+ filter:opacity(30%) ;
      transition: 1s;
 }
 
  button:hover {
     width: 360px;
     height: 110px;
-    background-color: #7e0303;
+    background-color: #7a1d1d;
     
 }
 button:active{
-    background-color: #ff0000;
-    -webkit-filter:opacity( 100%) ;
+    background-color: #c72509;
+    filter:opacity( 100%) ;
  }
  .footer {
     background-color: #000000;
@@ -364,11 +374,12 @@ button:active{
     padding-top: 20px;
     border-top: 1px solid#181212;
  }
+
  .product1-3 {
     border-radius: 12px;
     width: 230px;
     height: 230px;
-    background-image: url(assets/godofwar.jpg);
+    background-image: url(../assets/godofwar.jpg);
     background-size: cover;
     border:  #ffffff 1px solid;
   margin: 30px;
@@ -377,7 +388,7 @@ button:active{
     border-radius: 12px;
     width: 230px;
     height: 230px;
-    background-image: url(assets/eder-ring.png);
+    background-image: url(../assets/eder-ring.png);
     background-size: cover;
     border:  #ffffff 1px solid;
   margin: 30px;
@@ -387,7 +398,7 @@ button:active{
     border-radius: 12px;
     width: 230px;
     height: 230px;
-    background-image: url(assets/horizongame.jpg);
+    background-image: url(../assets/horizongame.jpg);
     background-size: cover;
     border:  #ffffff 1px solid;
   margin: 30px;
@@ -396,33 +407,37 @@ button:active{
     border-radius: 12px;
     width: 230px;
     height: 230px;
-    background-image: url(assets/Gran-Turismo-7-e1646421127713.jpg);
+    background-image: url(../assets/Gran-Turismo-7-e1646421127713.jpg);
     background-size: cover;
     border:  #ffffff 1px solid;
   margin: 30px;
 }
 
 
-.product1-3:hover{top:90px; 
-    box-shadow:0 8px 20px rgb(75, 72, 72);
-    -webkit-filter:opacity(40%) ;
-     transition: 1s;
+.product1-3:hover {top:-90px; 
+    width: 50%;
+    height: 93%;
+    filter:opacity(30%);
+    transition: 1s;
     
     }
-    .product2-3:hover{top:-90px; 
-        box-shadow:0 8px 20px rgb(75, 72, 72);
-        -webkit-filter:opacity(30%) ;
-         transition: 1s;
+    .product2-3:hover {
+        width: 50%;
+        height: 93%;
+        filter:opacity(30%);
+        transition: 1s;
         }
-        .product3-3:hover{top:-567px; 
-            box-shadow:0 8px 20px rgb(75, 72, 72);
-            -webkit-filter:opacity(30%) ;
-             transition: 1s;
+        .product3-3:hover { 
+            width: 50%;
+            height: 93%;
+            filter:opacity(30%);
+            transition: 1s;
             }
-            .product4-3:hover{top:-90px; 
-                box-shadow:0 8px 20px rgb(75, 72, 72);
-                -webkit-filter:opacity(30%) ;
-                 transition: 1s;
+            .product4-3:hover {
+                width: 50%;
+                height: 93%;
+                filter:opacity(30%);
+                transition: 1s;
                 }
 
                 
@@ -431,30 +446,34 @@ button:active{
                 .product1-4:hover {
                     width: 50%;
                     height: 93%;
-                    background-color: #7e0303;
+                    filter:opacity(30%);
+                    transition: 1s;
                 }
                 
                 .product2-4:hover {
                     width: 50%;
                     height: 93%;
-                    background-color: #7e0303;
+                    filter:opacity(30%);
+                    transition: 1s;
                 }
                 .product3-4:hover {
                     width: 50%;
                     height: 93%;
-                    background-color: #7e0303;
+                    filter:opacity(30%);
+                    transition: 1s;
                 }
                 .product4-4:hover {
                     width: 50%;
                     height: 93%;
-                    background-color: #7e0303;
+                    filter:opacity(30%);
+                    transition: 1s;
                 }
 
                 .product1-4 {
                     border-radius: 12px;
                     width: 230px;
                     height: 230px;
-                    background-image: url(assets/golden-state-warriors-logo-750x375.jpg);
+                    background-image: url(../assets/golden-state-warriors-logo-750x375.jpg);
                     background-size: cover;
                     border:  #ffffff 1px solid;
                   margin: 30px;
@@ -463,7 +482,7 @@ button:active{
                     border-radius: 12px;
                     width: 230px;
                     height: 230px;
-                    background-image: url(assets/rams.jpg);
+                    background-image: url(../assets/rams.jpg);
                     background-size: cover;
                     border:  #ffffff 1px solid;
                   margin: 30px;
@@ -473,7 +492,7 @@ button:active{
                     border-radius: 12px;
                     width: 230px;
                     height: 230px;
-                    background-image: url(assets/flamengo.png);
+                    background-image: url(../assets/flamengo.png);
                     background-size: cover;
                     border:  #ffffff 1px solid;
                   margin: 30px;
@@ -482,7 +501,7 @@ button:active{
                     border-radius: 12px;
                     width: 230px;
                     height: 230px;
-                    background-image: url(assets/real.jpg);
+                    background-image: url(../assets/real.jpg);
                     background-size: cover;
                     border:  #ffffff 1px solid;
                   margin: 30px;
@@ -491,23 +510,23 @@ button:active{
                 
                 .product1-4:hover{top:90px; 
                     box-shadow:0 8px 20px rgb(75, 72, 72);
-                    -webkit-filter:opacity(40%) ;
+                    filter:opacity(40%) ;
                      transition: 1s;
                     
                     }
                     .product2-4:hover{top:-90px; 
                         box-shadow:0 8px 20px rgb(75, 72, 72);
-                        -webkit-filter:opacity(30%) ;
+                        filter:opacity(30%) ;
                          transition: 1s;
                         }
                         .product3-4:hover{top:-567px; 
                             box-shadow:0 8px 20px rgb(75, 72, 72);
-                            -webkit-filter:opacity(30%) ;
+                            filter:opacity(30%) ;
                              transition: 1s;
                             }
                             .product4-4:hover{top:-90px; 
                                 box-shadow:0 8px 20px rgb(75, 72, 72);
-                                -webkit-filter:opacity(30%) ;
+                                filter:opacity(30%) ;
                                  transition: 1s;
                                 }
                 

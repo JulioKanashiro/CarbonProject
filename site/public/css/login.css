@@ -4,7 +4,7 @@
     height: 650px;
     background-color: black;
     background-size: cover;
-   /* background-attachment: fixed;  deica a imagem do banner fixa na pagina */
+  
     
 }
 .header .container {
@@ -101,10 +101,9 @@ a {
         margin-top: 13px;
         color: #ffffff;
 }
-.button:hover{top:-20px; 
-    box-shadow:0 8px 20px rgb(0, 0, 0);
-    -webkit-filter:sepia(38%);
-     transition: 1s;}
+.button:active{
+    background-color: #380606f1;
+}
 .box {
     margin-left: 20%;
 }

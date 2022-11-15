@@ -10,8 +10,8 @@
 
     <script src="./js/funcoes.js"></script>
 
-    <link rel="icon" href="./assets/icon/favicon.ico">
-    <link rel="stylesheet" href="login.css">
+    <link rel="icon" href="./assets/CarbonLogo1-removebg-preview.png">
+    <link rel="stylesheet" href="./css/login.css">
    
 </head>
 
@@ -70,15 +70,12 @@
 
 
     function entrar() {
-        aguardar();
 
         var emailVar = email_input.value;
         var senhaVar = senha_input.value;
 
         if (emailVar == "" || senhaVar == "") {
-            cardErro.style.display = "block"
-            mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
-            finalizarAguardar();
+            alert("Nenhum dos campos devem estar vazios");
             return false;
         }
         else {
@@ -112,13 +109,13 @@
                     sessionStorage.ID_USUARIO = json.id;
 
                     setTimeout(function () {
-                        window.location = "./dashboard/cards.html";
+                        window.location = "index-log.html";
                     }, 1000); // apenas para exibir o loading
 
                 });
 
             } else {
-
+                alert("A senha ou o email estão incorretos!");
                 console.log("Houve um erro ao tentar realizar o login!");
 
                 resposta.text().then(texto => {

@@ -1,12 +1,14 @@
 .background {
     background-COLOR: rgb(0, 0, 0);
     height: 700px;
+    padding: 70px;
 }
 .container {
-background-color: #1C66A6;
+background-color: #000000;
 color: white;
-border-bottom: solid 30px #1C66A6;
-border-top: solid 45px #1C66A6;
+border-bottom: solid 30px #000000;
+border-top: solid 1px;
+padding: 10px;
 }
 
 .box {
@@ -17,17 +19,17 @@ border-top: solid 45px #1C66A6;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.9);
     padding: 25px;
-    border-bottom: solid 3px #2b0404;
-    border-right: solid 3px #793939;
+    border-bottom: solid 4px #494747;
+    border-right: solid 4px #8d8a8a;
     font-family: Arial, Helvetica, sans-serif;
-    color: rgba(80, 5, 5);
+    color: rgb(0, 0, 0);
 
 }
 h2 {
     text-align: center;
     margin-bottom: 25px;
     font-size: 1.6rem;
-    color: 	#3d0909;
+    color: 	 #31130f;;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -42,7 +44,7 @@ h2 {
     margin-top: 10px;
     font-size: .9rem;
     transition: 2s;
-    background-color: #000000;
+    background-color: #31130f;
     color: white;
     border: none;
     border-radius: 20px;
@@ -51,14 +53,7 @@ h2 {
 
 *{
     margin: 0px;
-
-    padding-top: 20PX;
-
 }
 .footer {
     font-family: Arial, Helvetica, sans-serif;
 }
-@media (max-width: 300px) {
-    nav     { display: none; }
-    nav .box { display: inline-block; }
-  }
