@@ -103,10 +103,9 @@ a {
         margin-top: 13px;
         color: #ffffff;
 }
-.button:hover{top:-20px; 
-    box-shadow:0 8px 20px rgb(0, 0, 0);
-    -webkit-filter:sepia(38%);
-     transition: 1s;}
+.button:active{
+    background-color: #181212;
+}
 .box {
     margin-left: 20%;
 }

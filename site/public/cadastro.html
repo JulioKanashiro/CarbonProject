@@ -28,7 +28,7 @@
                 </a>
                 <ul class="navbar">
                     <li class=""><a href="index.html">Home</a></li>
-                    <li class=""><a href="Curb.html">Curb</a></li>
+                    <li class=""><a href="login.html">Curb</a></li>
                     <li>|</li>
                     <li class=""><a href="Login.html">Login</a></li>
                     <li class="here"><a href="Cadastro.html">Cadastro</a></li>
@@ -51,7 +51,7 @@
     <div class="csenha"><b>Confirmação:</b> 
     <input id="confirmacao_senha_input" type="password" placeholder="  **********"></div>
     </div>
-    <div class="link"><input type="checkbox" name="termos" id="termos"><a href="Termosdeuso.html"> Leia os<B>Termos de uso</B> </a></div>
+    <div class="link"><input type="checkbox" name="agreement" id="agreement"><a href="Termosdeuso.html"> Leia os<B>Termos de uso</B> </a></div>
     <button class="button" onclick="cadastrar()">Cadastrar</button>
     
     </div>
@@ -79,15 +79,18 @@
         var emailVar = email_input.value;
         var senhaVar = senha_input.value;
         var confirmacaoSenhaVar = confirmacao_senha_input.value;
+        const agreementVar = agreement.value;
 
         if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
-            cardErro.style.display = "block"
-            mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
-
-            // finalizarAguardar();
+           alert("Nenhum dos campos podem estar vazios!");
             return false;
-        }
-        else {
+        } else if (senhaVar != confirmacaoSenhaVar) {
+            alert("As senhas não conhecidem!");
+            return false;
+        } else if (agreementVar == false) {
+            alert("Por favor concorder com os termos...")
+            return false;
+        } else {
             return true;
         
         }
@@ -110,7 +113,7 @@
             console.log("resposta: ", resposta);
 
             if (resposta.ok) {
-                cardErro.style.display = "block";
+            
 
                 mensagem_erro.innerHTML = "Cadastro realizado com sucesso! Redirecionando para tela de Login...";
 
@@ -119,20 +122,18 @@
                 }, "2000")
                 
                 limparFormulario();
-                // finalizarAguardar();
+                
             } else {
                 throw ("Houve um erro ao tentar realizar o cadastro!");
             }
         }).catch(function (resposta) {
             console.log(`#ERRO: ${resposta}`);
-            // finalizarAguardar();
+           
         });
 
         return false;
     }
 
-    // function sumirMensagem() {
-    //     cardErro.style.display = "none"
-    // }
+    
 
 </script>
