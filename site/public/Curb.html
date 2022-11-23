@@ -37,10 +37,10 @@
             <div class="box-not">
                 <div class="tittle-atleta-ano"><h4>Atleta Do Ano</h4></div>
                   <div class="not1">
-                      <div class="product" style="background-image: url(./assets/TH_Curry-Night-Night.jpg);"></div> 
-                      <div class="product" style="background-image: url(./assets/Karim-Benzema-Vs-PSG.jpeg);"></div>
-                      <div class="product" style=" background-image: url(./assets/lebron-james.jpeg);"></div>
-                      <div class="product" style="  background-image: url(./assets/vinijr.jpg);" ></div>
+                      <button class="product" style="background-image: url(./assets/TH_Curry-Night-Night.jpg);" onclick="curry()"></button>
+                      <button class="product"style="background-image: url(./assets/Karim-Benzema-Vs-PSG.jpeg);" onclick="benzema()"></button>
+                      <button class="product"style=" background-image: url(./assets/lebron-james.jpeg);" onclick="lebron()"></button>
+                      <button class="product"style="  background-image: url(./assets/vinijr.jpg);" onclick="vinijr()" ></button>
                   </div> 
               </div>
             
@@ -48,30 +48,30 @@
               <div class="box-not2">
                   <div class="tittle-atleta-ano"><h4>Filme Do Ano</h4></div>
                     <div class="not1">
-                        <div class="product2"></div> 
-                        <div class="product2"style=" background-image: url(./assets/aqotwjpg.jpg);"></div>
-                        <div class="product2"style=" background-image: url(./assets/top-gun-maverick.jpg);"></div>
-                        <div class="product2"style="background-image: url(./assets/the-batman-2022-movies-dc-comics-red-background-5k-5k-7680x4320-7477.jpg);"></div>
+                        <button class="product2"onclick="nope()"></button>
+                            <button class="product2"style=" background-image: url(./assets/aqotwjpg.jpg);"onclick="allquiet()"></button>
+                                <button class="product2"style=" background-image: url(./assets/top-gun-maverick.jpg);"onclick="topgun()"></button>
+                                    <button class="product2"style="background-image: url(./assets/the-batman-2022-movies-dc-comics-red-background-5k-5k-7680x4320-7477.jpg);"onclick="batman()"></button>
                     </div> 
                 </div>
             
                 <div class="box-not2">
                   <div class="tittle-atleta-ano"><h4>Jogo Do Ano</h4></div>
                     <div class="not1">
-                        <div class="product3"></div> 
-                        <div class="product3" style="background-image: url(./assets/eder-ring.png);"></div>
-                        <div class="product3"style=" background-image: url(./assets/horizongame.jpg);"></div>
-                        <div class="product3"style="  background-image: url(./assets/Gran-Turismo-7-e1646421127713.jpg);"></div>
+                        <button class="product3"onclick="()"></button>
+                        <button class="product3" style="background-image: url(./assets/eder-ring.png);"onclick="elderring()"></button>
+                        <button class="product3"style=" background-image: url(./assets/horizongame.jpg);"onclick="horizon()"></button>
+                        <button class="product3"style="  background-image: url(./assets/Gran-Turismo-7-e1646421127713.jpg);"onclick="granturismo()"></button>
                     </div> 
                 </div>
             
                 <div class="box-not2">
                   <div class="tittle-atleta-ano"><h4>Equipe Esportiva Do Ano</h4></div>
                     <div class="not1">
-                        <div class="product4"></div> 
-                        <div class="product4"style="background-image: url(./assets/rams.jpg);"></div>
-                        <div class="product4"style="background-image: url(./assets/flamengo.png);"></div>
-                        <div class="product4"style="background-image: url(./assets/real.jpg);"></div>
+                        <button class="product4"onclick="gsw()"></button> 
+                        <button class="product4"style="background-image: url(./assets/rams.jpg);"onclick="rams()"></button>
+                            <button class="product4"style="background-image: url(./assets/flamengo.png);"onclick="flamengo()"></button>
+                                <button class="product4"style="background-image: url(./assets/real.jpg);"onclick="real()"></button>
                     </div> 
                 </div>
                <div id="bnt"><button>Confirmar Voto</button></div> 
@@ -81,3 +81,17 @@
     
 </body>
 </html>
+<script>
+var atleta = []  
+
+function lebron() {
+    if (atleta.indexOf('lebron') != -1) {
+        alert("você já escolheu esse jogador")
+    } else {
+    atleta.push('lebron')}
+    
+    product.style=" border:green 3px solid"
+}
+
+
+</script>

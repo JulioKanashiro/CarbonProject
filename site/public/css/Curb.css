@@ -122,13 +122,14 @@ a {
     margin: 30px;
 }
 
-.product:active{
+.product::before{
     border: #51ff00 6px solid;
 }
 .product:hover {
     box-shadow: 0 8px 20px rgb(75, 72, 72);
     filter: opacity(40%);
     transition: 2s;
+    cursor: pointer;
 }
 
 .product:hover {
