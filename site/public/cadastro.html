@@ -14,7 +14,7 @@
 
     <link rel="icon" href="./assets/CarbonLogo1-removebg-preview.png">
     <link rel="stylesheet" href="./css/cadastro.css">
-    
+
 
 <body>
     <div class="banner">
@@ -22,8 +22,9 @@
             <div class="container">
                 <a href="Home.html">
                     <div class="logo">
-                        <img src="assets/CarbonLogo1-removebg-preview.png" alt="Logo empresarial 'Carbon'" width="100px">
-    
+                        <img src="assets/CarbonLogo1-removebg-preview.png" alt="Logo empresarial 'Carbon'"
+                            width="100px">
+
                     </div>
                 </a>
                 <ul class="navbar">
@@ -32,46 +33,52 @@
                     <li>|</li>
                     <li class=""><a href="Login.html">Login</a></li>
                     <li class="here"><a href="Cadastro.html">Cadastro</a></li>
-             
-               </ul>
+
+                </ul>
             </div>
-            <div class="redes">     
-    <div class="box-login">
-         
-    <div class="box"> 
-        
-     <div class="login"><h1>Cadastro</h1></div>
-    <div class="ipt">
-    <div class="nome"><b>Nome:</b> 
-    <input id="nome_input" type="text" placeholder="Digite seu nome aqui..."> </div> 
-    <div class="email"><b>Email:</b> 
-    <input id="email_input" type="email" placeholder="  abcde@edcba.abcde"> </div>
-    <div class="senha"><b>Senha:</b> 
-    <input id="senha_input" type="password" placeholder="  **********"></div>
-    <div class="csenha"><b>Confirmação:</b> 
-    <input id="confirmacao_senha_input" type="password" placeholder="  **********"></div>
-    </div>
-    <div class="link"><input type="checkbox" name="agreement" id="agreement"><a href="Termosdeuso.html"> Leia os<B>Termos de uso</B> </a></div>
-    <button class="button" onclick="cadastrar()">Cadastrar</button>
-    
-    </div>
-    
-    
-    
- 
+            <div class="redes">
+                <div class="box-login">
+
+                    <div class="box">
+
+                        <div class="login">
+                            <h1>Cadastro</h1>
+                        </div>
+                        <div class="ipt">
+                            <div class="nome"><b>Nome:</b>
+                                <input id="nome_input" type="text" placeholder="Digite seu nome aqui...">
+                            </div>
+                            <div class="email"><b>Email:</b>
+                                <input id="email_input" type="email" placeholder="  abcde@edcba.abcde">
+                            </div>
+                            <div class="senha"><b>Senha:</b>
+                                <input id="senha_input" type="password" placeholder="  **********">
+                            </div>
+                            <div class="csenha"><b>Confirmação:</b>
+                                <input id="confirmacao_senha_input" type="password" placeholder="  **********">
+                            </div>
+                        </div>
+
+                        <button class="button" onclick="cadastrar()">Cadastrar</button>
+
+                    </div>
+
+
+
+
+                </div>
+
+
+            </div>
         </div>
-    
-    
-    </div>
-</div>
-    </body>
+</body>
 
 
 </html>
 
 <script>
     function cadastrar() {
-        // aguardar();
+
 
         //Recupere o valor da nova input pelo nome do id
         // Agora vá para o método fetch logo abaixo
@@ -79,21 +86,15 @@
         var emailVar = email_input.value;
         var senhaVar = senha_input.value;
         var confirmacaoSenhaVar = confirmacao_senha_input.value;
-        const agreementVar = agreement.value;
+
 
         if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
-           alert("Nenhum dos campos podem estar vazios!");
-            return false;
+            alert("Nenhum dos campos podem estar vazios!");
+           return false;
         } else if (senhaVar != confirmacaoSenhaVar) {
             alert("As senhas não conhecidem!");
-            return false;
-        } else if (agreementVar == false) {
-            alert("Por favor concorder com os termos...")
-            return false;
-        } else {
-            return true;
-        
-        }
+           return false;
+        } 
 
         // Enviando o valor da nova input
         fetch("/usuarios/cadastrar", {
@@ -113,27 +114,24 @@
             console.log("resposta: ", resposta);
 
             if (resposta.ok) {
-            
-
-                mensagem_erro.innerHTML = "Cadastro realizado com sucesso! Redirecionando para tela de Login...";
 
                 setTimeout(() => {
                     window.location = "login.html";
                 }, "2000")
-                
+
                 limparFormulario();
-                
+
             } else {
                 throw ("Houve um erro ao tentar realizar o cadastro!");
             }
         }).catch(function (resposta) {
             console.log(`#ERRO: ${resposta}`);
-           
+
         });
 
         return false;
     }
 
-    
+
 
 </script>
