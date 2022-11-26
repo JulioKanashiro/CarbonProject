@@ -33,7 +33,7 @@
     
         </div>
         <div class="we">
-            <div class="h1-premiacao"><b>Premiações Carbon 2022</b></div>
+           <div class="efeito"><div class="h1-premiacao"><b>Premiações Carbon 2022</b></div></div> 
             <div class="box-not">
                 <div class="tittle-atleta-ano"><h4>Atleta Do Ano</h4></div>
                   <div class="not1">
@@ -46,7 +46,7 @@
             
             
               <div class="box-not2">
-                  <div class="tittle-atleta-ano"><h4>Filme Do Ano</h4></div>
+                  <div class="tittle-atleta-ano2"><h4>Filme Do Ano</h4></div>
                     <div class="not1">
                         <button class="product2"onclick="nope()"id="np"><div id="verify11" style="display: none;"><img src="./assets/pngegg.png" alt="" width="95px"></div></button>
                             <button class="product2"style=" background-image: url(./assets/aqotwjpg.jpg);"onclick="allquiet()"id="aq"><div id="verify12" style="display: none;"><img src="./assets/pngegg.png" alt="" width="95px"></div></button>
@@ -56,17 +56,17 @@
                 </div>
             
                 <div class="box-not2">
-                  <div class="tittle-atleta-ano"><h4>Jogo Do Ano</h4></div>
+                  <div class="tittle-atleta-ano2"><h4>Jogo Do Ano</h4></div>
                     <div class="not1">
                         <button class="product3"onclick="godofwar()" id="gow"><div id="verify21" style="display: none;"><img src="./assets/pngegg.png" alt="" width="95px"></div></button>
                         <button class="product3" style="background-image: url(./assets/eder-ring.png);"onclick="elderring()"id="er"><div id="verify22" style="display: none;"><img src="./assets/pngegg.png" alt="" width="95px"></div></button>
                         <button class="product3"style=" background-image: url(./assets/horizongame.jpg);"onclick="horizon()"id="hrz"><div id="verify23" style="display: none;"><img src="./assets/pngegg.png" alt="" width="95px"></div></button>
-                        <button class="product3"style="  background-image: url(./assets/Gran-Turismo-7-e1646421127713.jpg);"onclick="granturismo()"id="gt"><div id="verify34" style="display: none;"><img src="./assets/pngegg.png" alt="" width="95px"></div></button>
+                        <button class="product3"style="  background-image: url(./assets/Gran-Turismo-7-e1646421127713.jpg);"onclick="granturismo()"id="gt"><div id="verify24" style="display: none;"><img src="./assets/pngegg.png" alt="" width="95px"></div></button>
                     </div> 
                 </div>
             
                 <div class="box-not2">
-                  <div class="tittle-atleta-ano"><h4>Equipe Esportiva Do Ano</h4></div>
+                  <div class="tittle-atleta-ano2"><h4>Equipe Esportiva Do Ano</h4></div>
                     <div class="not1">
                         <button class="product4"onclick="gsw()" id="gs"><div id="verify31" style="display: none;"><img src="./assets/pngegg.png" alt="" width="95px"></div></button> 
                         <button class="product4"style="background-image: url(./assets/rams.jpg);"onclick="rams()"id="rms"><div id="verify32" style="display: none;"><img src="./assets/pngegg.png" alt="" width="95px"></div></button>
@@ -160,7 +160,7 @@ function elderring() {
     } else {
     jogo.push('Elder Ring')}
     er.style.border = "#2377a8 7px solid"
-    verify21.style.display= "block" 
+    verify22.style.display= "block" 
 }
 
 function horizon() {
@@ -169,7 +169,7 @@ function horizon() {
     } else {
     jogo.push('Horizon Forbidden West')}
     hrz.style.border = "#2377a8 7px solid"
-    verify.style.display= "block" 
+    verify23.style.display= "block" 
 }
 function godofwar() {
     if (jogo.indexOf('God Of War: Ragnarok') != -1) {
@@ -198,7 +198,7 @@ function flamengo() {
     } else {
     time.push('Flamengo')}
     fla.style.border = "#2377a8 7px solid"
-    verify.style.display= "block" 
+    verify33.style.display= "block" 
 }
 function real() {
     if (time.indexOf('Real Madrid') != -1) {
@@ -206,7 +206,7 @@ function real() {
     } else {
     time.push('Real Madrid')}
     rm.style.border = "#2377a8 7px solid"
-    verify.style.display= "block"
+    verify34.style.display= "block"
 }
 function rams() {
     if (time.indexOf('Los Angeles Rams') != -1) {
@@ -214,7 +214,7 @@ function rams() {
     } else {
     time.push('Los Angeles Rams')}
     rms.style.border = "#2377a8 7px solid"
-    verify.style.display= "block"
+    verify32.style.display= "block"
 }
 function gsw() {
     if (time.indexOf('Golden State Warriors') != -1) {
@@ -222,7 +222,7 @@ function gsw() {
     } else {
     time.push('Golden State Warriors')}
     gs.style.border = "#2377a8 7px solid"
-    verify.style.display= "block" 
+    verify31.style.display= "block" 
 }
 
 function enviar() {
