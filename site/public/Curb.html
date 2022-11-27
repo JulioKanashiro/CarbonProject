@@ -74,7 +74,8 @@
                                 <button class="product4"style="background-image: url(./assets/real.jpg);"onclick="real()" id="rm"><div id="verify34" style="display: none;"><img src="./assets/pngegg.png" alt="" width="95px"></div></button>
                     </div> 
                 </div>
-               <div id="bnt"><button onclick="enviar">Confirmar Voto</button></div> 
+                
+               <div id="bnt"><button onclick="votos()">Confirmar Voto</button></div> 
         </div>
     </div>
            <center><div class="footer"><i> &copy; 2022 Carbon &reg; todos os direitos reservados </i> <br> By Júlio Kanashiro </div></center>
@@ -225,7 +226,7 @@ function gsw() {
     verify31.style.display= "block" 
 }
 
-function enviar() {
+function votos() {
     
 
 // Enviando o valor da nova input
@@ -237,22 +238,19 @@ fetch("/usuarios/votos", {
             body: JSON.stringify({
                 // crie um atributo que recebe o valor recuperado aqui
                 // Agora vá para o arquivo routes/usuario.js
-                atletaServer: atletaVar,
-                timeServer: timeVar,
-                jogoServer: jogoVar,
-                filmeServer: filmeVar
+                atletaServer: atleta,
+                timeServer: time,
+                jogoServer: jogo,
+                filmeServer: filme
             })
         }).then(function (resposta) {
 
             console.log("resposta: ", resposta);
 
             if (resposta.ok) {
-            
-
-                mensagem_erro.innerHTML = "Cadastro realizado com sucesso! Redirecionando para tela de Login...";
 
                 setTimeout(() => {
-                    window.location = "index-log.html";
+                    window.location = "analytics.html";
                 }, "2000")
                 
                 limparFormulario();
@@ -266,7 +264,6 @@ fetch("/usuarios/votos", {
         });
 
         return false;
-
-
+ 
     }
 </script>

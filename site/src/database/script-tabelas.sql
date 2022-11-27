@@ -15,7 +15,7 @@ CREATE TABLE usuario (
 
 
 
-CREATE TABLE votacao(
+CREATE TABLE votos(
 	id INT PRIMARY KEY AUTO_INCREMENT,
 	atletadoano varchar(50),
 	filmedoano varchar(50),

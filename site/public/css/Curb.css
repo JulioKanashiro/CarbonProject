@@ -117,7 +117,7 @@ a {
     border-radius: 12px;
     width: 250px;
     height: 250px;
-    background-image: url(../assets/TH_Curry-Night-Night.jpg);
+    /* background-image: url(../assets/TH_Curry-Night-Night.jpg); */
     background-size: cover;
     border: #ffffff 1px solid;
     margin: 30px;
@@ -304,3 +304,4 @@ body::-webkit-scrollbar-thumb {
    border-top:  #ffffff 2px solid;
    border-bottom: #ffffff 2px solid;;
 } 
+
