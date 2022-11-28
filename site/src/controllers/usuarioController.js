@@ -95,14 +95,14 @@ function cadastrar(req, res) {
 }
 function votos(req, res) {
     // Crie uma variável que vá recuperar os valores do arquivo cadastro.html
-    var atletadoano = req.body.atletaServer;
-    var filmedoano = req.body.filmeServer;
-    var jogodoano = req.body.jogoServer;
-    var timedoano = req.body.timeServer;
-
+    var curry = req.body.curryServer;
+    var lebron = req.body.lebronServer;
+    var vinijr = req.body.vinijrServer;
+    var benzema = req.body.benzemaServer;
+    
 
     // Passe os valores como parâmetro e vá para o arquivo usuarioModel.js
-    usuarioModel.votos(atletadoano, filmedoano, jogodoano, timedoano)
+    usuarioModel.votos(curry, lebron, vinijr, benzema)
         .then(
             function (resultado) {
                 res.json(resultado);
@@ -118,45 +118,50 @@ function votos(req, res) {
             }
         );
 }
+// function analytics(req, res) {
 
-function analytics(req, res) {
+
+//     // Passe os valores como parâmetro e vá para o arquivo usuarioModel.js
+//     usuarioModel.lebronj()
+//         .then(
+//             function (reslebron) {
+//                 res.json(reslebron)
+//             }
+//             usuarioModel.vini().then( 
+
+//                     function (resvinijr) {
+//                         res.json(resvinijr)
+//                     }
+//                         .catch(
+
+//                     )
+//                 ).catch(
+
+//             )
+//         ).catch(
+//             function (erro) {
+
+//                 console.log(erro);
+//                 console.log(
+//                     "\nHouve um erro ao realizar a votação! Erro: ",
+//                     erro.sqlMessage
+//                 );
+//                 res.status(500).json(erro.sqlMessage);
+//             }
+//         );
+// }
 
 
-    // Passe os valores como parâmetro e vá para o arquivo usuarioModel.js
-    usuarioModel.lebron()
-        .then(
-            function (reslebron) {
-                res.json(reslebron)
-            }
-            usuarioModel.vinijr().then( 
 
-                    function (resvinijr) {
-                        res.json(resvinijr)
-                    }
-                        .catch(
 
-                    )
-                ).catch(
+   
 
-            )
-        ).catch(
-            function (erro) {
-
-                console.log(erro);
-                console.log(
-                    "\nHouve um erro ao realizar a votação! Erro: ",
-                    erro.sqlMessage
-                );
-                res.status(500).json(erro.sqlMessage);
-            }
-        );
-}
-
+            
 module.exports = {
     entrar,
     cadastrar,
     votos,
     listar,
     testar,
-    analytics
+    // analytics
 }

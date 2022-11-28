@@ -2,7 +2,7 @@
     color: rgb(255, 255, 255);
     padding-top: 10px;
     padding-bottom: 10px;
-    height: 1930px;
+    height: 870px;
     background-color: rgb(0, 0, 0);
     background-size: cover;
     /* background-attachment: fixed;  deica a imagem do banner fixa na pagina */
@@ -101,31 +101,37 @@ a {
     width: 100%;
     height: 250px;
     justify-content: center;
+    padding-bottom: 27px;
+}
+.not2 {
+    display: flex;
+    width: 100%;
+    height: 250px;
+    justify-content: center;
+    padding-bottom: 50px;
 }
 
 .box-not {
     border-radius: 5px;
-    height: 1115px;
+    height: 715px;
     padding: 10px;
-    margin-bottom: 10px;
     display: flex;
-    margin-left: 20px;
-
+    padding-bottom: 49px;
 }
 
 .product {
     border-radius: 12px;
     width: 250px;
     height: 250px;
-    /* background-image: url(../assets/TH_Curry-Night-Night.jpg); */
+    background-image: url(../assets/TH_Curry-Night-Night.jpg);
     background-size: cover;
     border: #ffffff 1px solid;
     margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
-.product::before{
-    border: #51ff00 6px solid;
-}
 .product:hover {
     box-shadow: 0 8px 20px rgb(75, 72, 72);
     filter: opacity(40%);
@@ -167,7 +173,7 @@ a {
     border-radius: 12px;
     width: 250px;
     height: 250px;
-    background-image: url(../assets/nopefilm.jpg);
+    background-image: url(../assets/neymar.jpeg);
     background-size: cover;
     border: #ffffff 1px solid;
     margin: 30px;
@@ -188,7 +194,7 @@ a {
     border-radius: 12px;
     width: 250px;
     height: 250px;
-    background-image: url(../assets/godofwar.jpg);
+    background-image: url(../assets/jasontatum.jpg);
     background-size: cover;
     border: #ffffff 1px solid;
     margin: 30px;
@@ -204,22 +210,6 @@ a {
 
 }
 
-.product4 {
-    border-radius: 12px;
-    width: 250px;
-    height: 250px;
-    background-image: url(../assets/golden-state-warriors-logo-750x375.jpg);
-    background-size: cover;
-    border: #ffffff 1px solid;
-    margin: 30px;
-}
-
-.product4:hover {
-    width: 50%;
-    height: 100%;
-    filter: opacity(30%);
-    transition: 1s;
-}
 
 
 .h1-premiacao {
@@ -235,7 +225,7 @@ a {
 }
 
 button {
-    background-color: #ff0000;
+    background-color: #2377a867;;
     width: 350px;
     height: 100px;
     border-radius: 20px;
@@ -243,13 +233,14 @@ button {
     border-bottom: #d8a9a9 2px solid;
     color: #ffffff;
     font-size: x-large;
-    margin-top: 90px;
+    margin-top: 70px;
     margin-left: 470px;
 }
 
 .btn {
-    margin-top: 6%;
+
     margin-left: 36%;
+    background-color: #000000;
 }
 
 button:hover {
@@ -305,3 +296,14 @@ body::-webkit-scrollbar-thumb {
    border-bottom: #ffffff 2px solid;;
 } 
 
+
+.mv {
+    height:90px;
+    width: 100%;
+    background-color: #000000c5;
+    font-size: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

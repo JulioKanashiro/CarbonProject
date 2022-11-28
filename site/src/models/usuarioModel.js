@@ -31,36 +31,26 @@ function cadastrar(nome, email, senha) {
     return database.executar(instrucao);
 }
 
-function votos(atleta, filme, jogo, time ) {
-    
+function votos(curry, lebron, vinijr, benzema) {
     
     var instrucao = `
-        INSERT INTO votos (atletadoano, filmedoano, jogodoano, timedoano) VALUES ('${atleta}', '${filme}', '${jogo}', '${time}');
+        INSERT INTO votos (curry, lebron, vinijr, benzema) VALUES ('${curry}', '${lebron}', '${vinijr}', '${benzema}');
     `;
     console.log("Executando a instrução SQL: \n" + instrucao);
     return database.executar(instrucao);
 }
-function lebron() {
-    
+function analytics(curry, lebron, vinijr, benzema) {
     var instrucao = `
-    select count(atletadoano) as votolebron from votos where atletadoano like "%lebron%";
+    select count('${curry}') as 'Stephan Curry', count('${lebron}') as 'LeBron James', count('${vinijr}') as 'Vinicius Jr', count('${benzema}')  as 'Karim Benzema' from votos where not null;
     `;
     console.log("Executando a instrução SQL: \n" + instrucao);
     return database.executar(instrucao);
 }
-function vinijr() {
-    
-    var instrucao = `
-    select count(atletadoano) as votovinijr from votos where atletadoano like "%vinijr%";
-    `;
-    console.log("Executando a instrução SQL: \n" + instrucao);
-    return database.executar(instrucao);
-}
+
 module.exports = {
     entrar,
     cadastrar,
     votos,
     listar,
-    lebron,
-    vinijr
+    analytics
 };

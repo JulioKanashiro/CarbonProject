@@ -6,22 +6,23 @@ CREATE DATABASE carbon;
 
 USE carbon;
 
+
 CREATE TABLE usuario (
-	id INT PRIMARY KEY AUTO_INCREMENT,
+	idusuario INT PRIMARY KEY AUTO_INCREMENT,
 	nome VARCHAR(50),
 	email VARCHAR(50),
 	senha VARCHAR(50)
 );
 
 
-
 CREATE TABLE votos(
-	id INT PRIMARY KEY AUTO_INCREMENT,
-	atletadoano varchar(50),
-	filmedoano varchar(50),
-	jogodoano varchar(50),
-	timedoano varchar(50)
-);
+	idvotos INT PRIMARY KEY AUTO_INCREMENT,
+	curry varchar(50),
+	lebron varchar(50),
+	vinijr varchar(50),
+	benzema varchar(50),
+    fkusuario int,
+    foreign key (fkusuario) references usuario(id));
 
 
 
