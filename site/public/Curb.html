@@ -80,44 +80,41 @@
 
 </html>
 <script>
-    var curry = []
-    var lebron = [] 
-    var vinijr = []
-    var benzema = []
-
+    
+    var nomevoto = []
     function lebronj() {
-        if (lebron.indexOf('LeBron James') != -1) {
+        if (nomevoto.indexOf('voto') != -1) {
             alert("você já escolheu esse jogador")
         } else {
-            lebron.push('LeBron James')
+            nomevoto.push('voto')
         }
 
         bron.style.border = "#2377a8 7px solid"
         verify3.style.display = "block"
     }
     function scurry() {
-        if (curry.indexOf('Stephan Curry') != -1) {
+        if (nomevoto.indexOf('voto') != -1) {
             alert("você já escolheu esse jogador")
         } else {
-            curry.push('Stephan Curry')
+            nomevoto.push('voto')
         }
         crr.style.border = "#2377a8 7px solid"
         verify.style.display = "block"
     }
     function vini() {
-        if (vinijr.indexOf('vinijr') != -1) {
+        if (nomevoto.indexOf('voto') != -1) {
             alert("você já escolheu esse jogador")
         } else {
-            vinijr.push('vinijr')
+            nomevoto.push('voto')
         }
         vn.style.border = "#2377a8 7px solid"
         verify4.style.display = "block"
     }
     function kbenzema() {
-        if (benzema.indexOf('Karim Benzema') != -1) {
+        if (nomevoto.indexOf('voto') != -1) {
             alert("você já escolheu esse jogador")
         } else {
-            benzema.push('Karim Benzama')
+            nomevoto.push('voto')
         }
         bzm.style.border = "#2377a8 7px solid"
         verify2.style.display = "block"
@@ -138,10 +135,7 @@
                 // crie um atributo que recebe o valor recuperado lecleui
                 // Agora vá para o arquivo routes/usuario.js
               
-                curryServer: curry,
-                lebronServer: lebron,
-                vinijrServer: vinijr,
-                benzemaServer: benzema
+                nomevotoServer: nomevoto
 
             })
         }).then(function (resposta) {

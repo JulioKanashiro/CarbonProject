@@ -60,46 +60,9 @@
 
         function analytics() {
   
-fetch("/usuarios/analytics", {
-    method: "POST",
-    headers: {
-        "Content-Type": "application/json"
-    },
-}).then(function (resposta) {
- resposta.json().then(function (res) {
-var votolebron = res[0].votolebron
-var votovinijr = res[0].votovinijr
- var imgatleta = document.getElementById('imgatleta')
- 
- if (votolebron > votovinijr ) {
-    imgatleta.src="./assets/lebron-james.jpeg"
- } else if (votovinijr > votolebron)
- imgatleta.src="./assets/vinijr.jpg"
- }
- )
-    // if (resposta.ok) {
-    //     console.log(resposta);
-          
-    //     resposta.json().then(json => {
-    //         console.log(json);
-    //         console.log(JSON.stringify(json));
-    //     });
-
-    // } else {
-    //     alert("A senha ou o email estão incorretos!");
-    //     console.log("Houve um erro ao tentar realizar o login!");
-
-    // }
-
-}).catch(function (erro) {
-    console.log(erro);
-})
-
-return false;
-}
 
 
 
-
+        }
 
      </script>

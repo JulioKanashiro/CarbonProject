@@ -15,14 +15,14 @@ CREATE TABLE usuario (
 );
 
 
-CREATE TABLE votos(
+create table votos(
 	idvotos INT PRIMARY KEY AUTO_INCREMENT,
-	curry varchar(50),
-	lebron varchar(50),
-	vinijr varchar(50),
-	benzema varchar(50),
+	nomeVoto varchar(45),
     fkusuario int,
-    foreign key (fkusuario) references usuario(id));
-
+    foreign key (fkusuario) references usuario(idusuario));
+    
+    select * from votos;
+    
+    select nomeVoto, count(idvotos) from votos1 group by nomeVoto;
 
 

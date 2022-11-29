@@ -31,26 +31,25 @@ function cadastrar(nome, email, senha) {
     return database.executar(instrucao);
 }
 
-function votos(curry, lebron, vinijr, benzema) {
+function votos(nomevoto) {
     
     var instrucao = `
-        INSERT INTO votos (curry, lebron, vinijr, benzema) VALUES ('${curry}', '${lebron}', '${vinijr}', '${benzema}');
+        INSERT INTO votos (nomevoto) VALUES ('${nomevoto}');
     `;
     console.log("Executando a instrução SQL: \n" + instrucao);
     return database.executar(instrucao);
 }
-function analytics(curry, lebron, vinijr, benzema) {
-    var instrucao = `
-    select count('${curry}') as 'Stephan Curry', count('${lebron}') as 'LeBron James', count('${vinijr}') as 'Vinicius Jr', count('${benzema}')  as 'Karim Benzema' from votos where not null;
-    `;
-    console.log("Executando a instrução SQL: \n" + instrucao);
-    return database.executar(instrucao);
-}
+// function analytics() {
+//     var instrucao = `
+//     select nomeVoto, count(idvotos) from votos1 group by nomeVoto;`;
+//     console.log("Executando a instrução SQL: \n" + instrucao);
+//     return database.executar(instrucao);
+// }
 
 module.exports = {
     entrar,
     cadastrar,
     votos,
     listar,
-    analytics
+    // analytics
 };

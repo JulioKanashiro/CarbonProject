@@ -95,14 +95,12 @@ function cadastrar(req, res) {
 }
 function votos(req, res) {
     // Crie uma variável que vá recuperar os valores do arquivo cadastro.html
-    var curry = req.body.curryServer;
-    var lebron = req.body.lebronServer;
-    var vinijr = req.body.vinijrServer;
-    var benzema = req.body.benzemaServer;
+    var nomevoto = req.body.nomevotoServer;
+
     
 
     // Passe os valores como parâmetro e vá para o arquivo usuarioModel.js
-    usuarioModel.votos(curry, lebron, vinijr, benzema)
+    usuarioModel.votos(nomevoto)
         .then(
             function (resultado) {
                 res.json(resultado);
