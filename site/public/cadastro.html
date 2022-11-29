@@ -17,7 +17,7 @@
 
 
 <body>
-    <div class="banner">
+    <div class="banner"> 
         <div class="header">
             <div class="container">
                 <a href="Home.html">
@@ -35,8 +35,10 @@
                     <li class="here"><a href="Cadastro.html">Cadastro</a></li>
 
                 </ul>
-            </div>
-            <div class="redes">
+            
+            </div> 
+
+            <div class="redes"> 
                 <div class="box-login">
 
                     <div class="box">
@@ -58,7 +60,7 @@
                                 <input id="confirmacao_senha_input" type="password" placeholder="  **********">
                             </div>
                         </div>
-
+                        <div class="link"><input type="checkbox" id="agreement"><a href="Termosdeuso.html"> Leia os<B>Termos de uso</B> </a></div>
                         <button class="button" onclick="cadastrar()">Cadastrar</button>
 
                     </div>
@@ -86,13 +88,16 @@
         var emailVar = email_input.value;
         var senhaVar = senha_input.value;
         var confirmacaoSenhaVar = confirmacao_senha_input.value;
-
+        var agreementVar = agreement.value;
 
         if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
             alert("Nenhum dos campos podem estar vazios!");
            return false;
         } else if (senhaVar != confirmacaoSenhaVar) {
             alert("As senhas não conhecidem!");
+           return false;
+        } else if (senhaVar.length < 8) {
+            alert("A senha deve ter no minimo 8 caracteres!");
            return false;
         } 
 
