@@ -293,8 +293,8 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     align-items: center;
     margin-top: 30px;
-   border-top:  #ffffff 2px solid;
-   border-bottom: #ffffff 2px solid;;
+   /* border-top:  #ffffff 2px solid;
+   border-bottom: #ffffff 2px solid;; */
 } 
 
 

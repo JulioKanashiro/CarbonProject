@@ -21,7 +21,14 @@ create table votos(
     fkusuario int,
     foreign key (fkusuario) references usuario(idusuario));
     
+create table vencedor(
+	idvencedor INT PRIMARY KEY AUTO_INCREMENT,
+    fkvencedor int,
+    foreign key (fkvencedor) references votos(idvotos));
+    
 
+    
+    
    
 
 
