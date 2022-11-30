@@ -96,11 +96,11 @@ function cadastrar(req, res) {
 function votos(req, res) {
     // Crie uma variável que vá recuperar os valores do arquivo cadastro.html
     var nomevoto = req.body.nomevotoServer;
-
+    var idusuario = req.body.idusuarioServer;
     
 
     // Passe os valores como parâmetro e vá para o arquivo usuarioModel.js
-    usuarioModel.votos(nomevoto)
+    usuarioModel.votos(nomevoto, idusuario)
         .then(
             function (resultado) {
                 res.json(resultado);
@@ -160,6 +160,6 @@ module.exports = {
     cadastrar,
     votos,
     listar,
-    testar,
+    testar
     // analytics
 }

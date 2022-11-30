@@ -17,7 +17,7 @@
             <div class="container">
                 <a href="Home.html">
                     <div class="logo">
-                        <img src="../public/assets/CarbonLogo1-removebg-preview.png" alt="Logo empresarial 'Carbon'"
+                        <img src="assets/CarbonLogo1-removebg-preview.png" alt="Logo empresarial 'Carbon'"
                             width="100px">
 
                     </div>
@@ -80,41 +80,41 @@
 
 </html>
 <script>
-    
+    var idusuario = sessionStorage.ID_USUARIO
     var nomevoto = []
     function lebronj() {
-        if (nomevoto.indexOf('voto') != -1) {
+        if (nomevoto.indexOf('lebron') != -1) {
             alert("você já escolheu esse jogador")
         } else {
-            nomevoto.push('voto')
+            nomevoto.push('lebron')
         }
 
         bron.style.border = "#2377a8 7px solid"
         verify3.style.display = "block"
     }
     function scurry() {
-        if (nomevoto.indexOf('voto') != -1) {
+        if (nomevoto.indexOf('curry') != -1) {
             alert("você já escolheu esse jogador")
         } else {
-            nomevoto.push('voto')
+            nomevoto.push('curry')
         }
         crr.style.border = "#2377a8 7px solid"
         verify.style.display = "block"
     }
     function vini() {
-        if (nomevoto.indexOf('voto') != -1) {
+        if (nomevoto.indexOf('vinijr') != -1) {
             alert("você já escolheu esse jogador")
         } else {
-            nomevoto.push('voto')
+            nomevoto.push('vinijr')
         }
         vn.style.border = "#2377a8 7px solid"
         verify4.style.display = "block"
     }
     function kbenzema() {
-        if (nomevoto.indexOf('voto') != -1) {
+        if (nomevoto.indexOf('benzema') != -1) {
             alert("você já escolheu esse jogador")
         } else {
-            nomevoto.push('voto')
+            nomevoto.push('benzema')
         }
         bzm.style.border = "#2377a8 7px solid"
         verify2.style.display = "block"
@@ -135,7 +135,9 @@
                 // crie um atributo que recebe o valor recuperado lecleui
                 // Agora vá para o arquivo routes/usuario.js
               
-                nomevotoServer: nomevoto
+                nomevotoServer: nomevoto,
+                idusuarioServer: idusuario
+
 
             })
         }).then(function (resposta) {

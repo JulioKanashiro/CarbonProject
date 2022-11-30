@@ -17,7 +17,7 @@
         <div class="container">
             <a href="Home.html">
                 <div class="logo">
-                    <img src="../public/assets/CarbonLogo1-removebg-preview.png" alt="Logo empresarial 'Carbon'" width="100px">
+                    <img src="assets/CarbonLogo1-removebg-preview.png" alt="Logo empresarial 'Carbon'" width="100px">
 
                 </div>
             </a>
@@ -35,10 +35,10 @@
              <div class="box-not">
               
                    <div class="not1">
-                       <button class="product" style="background-image: url(./assets/TH_Curry-Night-Night.jpg);" onclick="curry()" ><div class="mv">0 votos</div></button>
-                       <button class="product"style="background-image: url(./assets/Karim-Benzema-Vs-PSG.jpeg);" onclick="benzema()"><div class="mv">0 votos</div></button>
-                       <button class="product"style=" background-image: url(./assets/lebron-james.jpeg);" onclick="lebron()"><div class="mv">0 votos</div></button>
-                       <button class="product"style="  background-image: url(./assets/vinijr.jpg);" onclick="vinijr()" style="font-size:xx-large;"> <div class="mv">0 votos</div> </button>
+                       <button class="product" style="background-image: url(./assets/TH_Curry-Night-Night.jpg);" onclick="curry()" ><div class="mv"><p id="respcurry"> </p></div></button>
+                       <button class="product"style="background-image: url(./assets/Karim-Benzema-Vs-PSG.jpeg);" onclick="benzema()"><div class="mv"><p id="respbenzema"> </p></div></button>
+                       <button class="product"style=" background-image: url(./assets/lebron-james.jpeg);" onclick="lebron()"><div class="mv"><p id="resplebron"> </p></div></button>
+                       <button class="product"style="  background-image: url(./assets/vinijr.jpg);" onclick="vinijr()" style="font-size:xx-large;"> <div class="mv"><p id="respvinijr"> </p></div> </button>
                    </div> 
              
              
@@ -59,9 +59,117 @@
      <script>
 
         function analytics() {
-  
+            fetch("/avisos/lebron").then(function (resposta) {
+            if (resposta.ok) {
+                if (resposta.status == 204) {
+                    throw "Nenhum resultado encontrado!!";
+                }
+
+                resposta.json().then(function (resposta) {
+                    console.log("Dados recebidos: ", JSON.stringify(resposta));
+
+                       
+                        for (let i = 0; i < resposta.length; i++) {
+                            var publicacao = resposta[i];
+                        var lvotos = publicacao.votos
+                        
+                        resplebron.innerHTML = `${lvotos} votos `
+
+                        }
+                   
 
 
+                });
+            } else {
+                throw ('Houve um erro na API!');
+            }
+        }).catch(function (resposta) {
+            console.error(resposta);
+        });
+
+        fetch("/avisos/curry").then(function (resposta) {
+            if (resposta.ok) {
+                if (resposta.status == 204) {
+                    throw "Nenhum resultado encontrado!!";
+                }
+
+                resposta.json().then(function (resposta) {
+                    console.log("Dados recebidos: ", JSON.stringify(resposta));
+
+                       
+                        for (let i = 0; i < resposta.length; i++) {
+                            var publicacao = resposta[i];
+                        var cvotos = publicacao.votos
+                        
+                        respcurry.innerHTML = `${cvotos} votos`
+
+                        }
+                   
+
+
+                });
+            } else {
+                throw ('Houve um erro na API!');
+            }
+        }).catch(function (resposta) {
+            console.error(resposta);
+        });
+
+        fetch("/avisos/vinijr").then(function (resposta) {
+            if (resposta.ok) {
+                if (resposta.status == 204) {
+                    throw "Nenhum resultado encontrado!!";
+                }
+
+                resposta.json().then(function (resposta) {
+                    console.log("Dados recebidos: ", JSON.stringify(resposta));
+
+                       
+                        for (let i = 0; i < resposta.length; i++) {
+                            var publicacao = resposta[i];
+                        var vvotos = publicacao.votos
+                        
+                        respvinijr.innerHTML = `${vvotos} votos`
+
+                        }
+                   
+
+
+                });
+            } else {
+                throw ('Houve um erro na API!');
+            }
+        }).catch(function (resposta) {
+            console.error(resposta);
+        });
+
+        fetch("/avisos/benzema").then(function (resposta) {
+            if (resposta.ok) {
+                if (resposta.status == 204) {
+                    throw "Nenhum resultado encontrado!!";
+                }
+
+                resposta.json().then(function (resposta) {
+                    console.log("Dados recebidos: ", JSON.stringify(resposta));
+
+                       
+                        for (let i = 0; i < resposta.length; i++) {
+                            var publicacao = resposta[i];
+                        var bvotos = publicacao.votos
+                        
+                        respbenzema.innerHTML = `${bvotos} votos`
+
+                        }
+                   
+
+
+                });
+            } else {
+                throw ('Houve um erro na API!');
+            }
+        }).catch(function (resposta) {
+            console.error(resposta);
+        });
 
         }
 

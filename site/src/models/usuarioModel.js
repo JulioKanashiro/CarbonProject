@@ -31,10 +31,10 @@ function cadastrar(nome, email, senha) {
     return database.executar(instrucao);
 }
 
-function votos(nomevoto) {
+function votos(nomevoto, idusuario) {
     
     var instrucao = `
-        INSERT INTO votos (nomevoto) VALUES ('${nomevoto}');
+        INSERT INTO votos (nomevoto, fkusuario) VALUES ('${nomevoto}', ${idusuario});
     `;
     console.log("Executando a instrução SQL: \n" + instrucao);
     return database.executar(instrucao);
@@ -50,6 +50,6 @@ module.exports = {
     entrar,
     cadastrar,
     votos,
-    listar,
+    listar
     // analytics
 };

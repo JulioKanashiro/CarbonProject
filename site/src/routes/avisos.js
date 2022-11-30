@@ -10,6 +10,19 @@ router.get("/", function (req, res) {
 router.get("/listar", function (req, res) {
     avisoController.listar(req, res);
 });
+router.get("/lebron", function (req, res) {
+    avisoController.lebron(req, res);
+});
+router.get("/curry", function (req, res) {
+    avisoController.curry(req, res);
+});
+router.get("/vinijr", function (req, res) {
+    avisoController.vinijr(req, res);
+});
+router.get("/benzema", function (req, res) {
+    avisoController.benzema(req, res);
+});
+
 
 router.get("/listar/:idUsuario", function (req, res) {
     avisoController.listarPorUsuario(req, res);

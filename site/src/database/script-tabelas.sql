@@ -21,8 +21,7 @@ create table votos(
     fkusuario int,
     foreign key (fkusuario) references usuario(idusuario));
     
-    select * from votos;
-    
-    select nomeVoto, count(idvotos) from votos1 group by nomeVoto;
+
+   
 
 
