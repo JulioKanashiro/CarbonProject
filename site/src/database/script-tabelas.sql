@@ -25,7 +25,28 @@ create table vencedor(
 	idvencedor INT PRIMARY KEY AUTO_INCREMENT,
     fkvencedor int,
     foreign key (fkvencedor) references votos(idvotos));
-    
+
+  
+-- trazer o campeao parcial 
+
+    SELECT  nomevoto,
+             COUNT(nomevoto) AS 'maior ocorrencia' 
+    FROM  votos
+    GROUP BY nomevoto
+    ORDER BY COUNT(nomevoto) DESC
+          limit 1;
+          
+-- trazer quantidade de votos do LeBron James
+select nomevoto, count(idvotos) as votos from votos where nomevoto = "lebron" group by nomevoto;
+
+-- trazer quantidade de votos do Stephan Curry
+select nomevoto, count(idvotos) as votos from votos where nomevoto = "curry" group by nomevoto;
+
+-- trazer quantidade de votos do Karim Benzema
+select nomevoto, count(idvotos) as votos from votos where nomevoto = "benzema" group by nomevoto;
+
+-- trazer quantidade de votos do vinicius Jr
+select nomevoto, count(idvotos) as votos from votos where nomevoto = "vinijr" group by nomevoto;
 
     
     
