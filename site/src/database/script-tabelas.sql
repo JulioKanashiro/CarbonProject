@@ -6,7 +6,6 @@ CREATE DATABASE carbon;
 
 USE carbon;
 
-
 CREATE TABLE usuario (
 	idusuario INT PRIMARY KEY AUTO_INCREMENT,
 	nome VARCHAR(50),
@@ -14,21 +13,19 @@ CREATE TABLE usuario (
 	senha VARCHAR(50)
 );
 
-
 create table votos(
 	idvotos INT PRIMARY KEY AUTO_INCREMENT,
 	nomeVoto varchar(45),
     fkusuario int,
-    foreign key (fkusuario) references usuario(idusuario));
-    
-create table vencedor(
-	idvencedor INT PRIMARY KEY AUTO_INCREMENT,
-    fkvencedor int,
-    foreign key (fkvencedor) references votos(idvotos));
+    foreign key (fkusuario) references usuario(idusuario),
+    fktotal int,
+    foreign key (fktotal) references votos(idvotos));
 
+
+-- trazer total de votos
+ select count(idvotos) from votos;       
   
 -- trazer o campeao parcial 
-
     SELECT  nomevoto,
              COUNT(nomevoto) AS 'maior ocorrencia' 
     FROM  votos
@@ -47,9 +44,3 @@ select nomevoto, count(idvotos) as votos from votos where nomevoto = "benzema" g
 
 -- trazer quantidade de votos do vinicius Jr
 select nomevoto, count(idvotos) as votos from votos where nomevoto = "vinijr" group by nomevoto;
-
-    
-    
-   
-
-
