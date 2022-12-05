@@ -309,3 +309,19 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     align-items: center;
 }
+.total {
+    height: 120px;
+    width: 500px;
+    background: #ffd000c2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-weight: 500;
+    font-style: oblique;
+    font-size: x-large;
+    font-family: arial, sans-serif;
+    margin-top: 30px;
+    margin-left: 421px;
+    flex-direction: column;
+}

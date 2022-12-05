@@ -121,6 +121,14 @@ function benzema() {
     console.log("Executando a instrução SQL: \n" + instrucao);
     return database.executar(instrucao);
 }
+function numtotal() {
+    console.log("ACESSEI O AVISO  MODEL \n \n\t\t >> Se aqui der erro de 'Error: connect ECONNREFUSED',\n \t\t >> verifique suas credenciais de acesso ao banco\n \t\t >> e se o servidor de seu BD está rodando corretamente. \n\n function listar()");
+    var instrucao = `
+    select count(idvotos) from votos;`
+    ;
+    console.log("Executando a instrução SQL: \n" + instrucao);
+    return database.executar(instrucao);
+}
 module.exports = {
     listar,
     listarPorUsuario,
@@ -131,5 +139,6 @@ module.exports = {
     lebron,
     curry,
     vinijr,
-    benzema
+    benzema, 
+    numtotal
 }

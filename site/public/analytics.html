@@ -12,7 +12,7 @@
 </head>
 
 <body onload="analytics()">
-<div class="banner" style="height: 630px ;">
+<div class="banner" style="height: 660px ;">
     <div class="header">
         <div class="container">
             <a href="index-log.html">
@@ -50,6 +50,7 @@
                 
                  
              </div>
+             <!-- <div class="total"> <div class="titulototal">Votos totais:</div><p id="ttvotos"></p></div> -->
             </div>
         </div>
                <center><div class="footer"><i> &copy; 2022 Carbon &reg; todos os direitos reservados </i> <br> By Júlio Kanashiro </div></center>
@@ -147,6 +148,7 @@
             if (resposta.ok) {
                 if (resposta.status == 204) {
                     throw "Nenhum resultado encontrado!!";
+                   
                 }
 
                 resposta.json().then(function (resposta) {
@@ -170,6 +172,42 @@
         }).catch(function (resposta) {
             console.error(resposta);
         });
+
+
+        fetch("/avisos/numtotal").then(function (resposta) {
+            if (resposta.ok) {
+                if (resposta.status == 204) {
+                    throw "Nenhum resultado encontrado!!";
+                }
+
+                resposta.json().then(function (resposta) {
+                    console.log("Dados recebidos: ", JSON.stringify(resposta));
+
+                       
+                        for (let i = 0; i < resposta.length; i++) {
+                            var publicacao = resposta[i];
+                        var ttvt = publicacao.votos
+                        
+                        ttvotos.innerHTML = `${ttvt}`
+
+                        }
+                   
+
+
+                });
+            } else {
+                throw ('Houve um erro na API!');
+            }
+        }).catch(function (resposta) {
+            console.error(resposta);
+        });
+
+
+
+        
+       
+
+
 
         }
 

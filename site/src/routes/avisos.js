@@ -23,6 +23,9 @@ router.get("/benzema", function (req, res) {
     avisoController.benzema(req, res);
 });
 
+router.get("/numtotal", function (req, res) {
+    avisoController.numtotal(req, res);
+});
 
 router.get("/listar/:idUsuario", function (req, res) {
     avisoController.listarPorUsuario(req, res);
