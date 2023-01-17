@@ -1,9 +1,9 @@
 .banner {
-    color: rgb(255, 255, 255);
+    color:#041620;
     padding-top: 10px;
     padding-bottom: 10px;
     height: 870px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     background-size: cover;
     /* background-attachment: fixed;  deica a imagem do banner fixa na pagina */
 
@@ -41,33 +41,33 @@
 }
 
 li {
-    color: #ffffff;
+    color: #041620;
 }
 
 a {
-    color: #ffffff;
+    color: #041620;
     text-decoration: none;
 }
 
 .navbar a:focus {
     /*:focus é quando a tag <a> for selecionada */
-    border-bottom: solid 2px #ffffff solid 3px;
-    border-color: rgb(217, 221, 0);
+    border-bottom: #ffee00 solid 2px;
+    border-color: #d9ff00;
 }
 
 .header a {
 
-    color: #ffffff solid 3px;
+    color: #041620;
 }
 
 .here {
     font-weight: 1000;
     color: #db0000;
-    border-bottom: white 2px solid;
+    border-bottom: #041620 2px solid;
 }
 
 * {
-
+    color: #041620;
     margin: 0%;
     font-family: arial, sans-serif;
 }
@@ -121,11 +121,11 @@ a {
 
 .product {
     border-radius: 12px;
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     background-image: url(../assets/TH_Curry-Night-Night.jpg);
     background-size: cover;
-    border: #ffffff 1px solid;
+    border: #010314 1px solid;
     margin: 30px;
     display: flex;
     justify-content: center;
@@ -142,13 +142,12 @@ a {
 
 .product:hover {
     width: 50%;
-    height: 100%;
     background-color: #7e0303;
 }
 
 .box-not {
     height: 400px;
-    display: inline;
+    flex-direction: column;
 }
 
 
@@ -176,7 +175,7 @@ a {
     height: 250px;
     background-image: url(../assets/neymar.jpeg);
     background-size: cover;
-    border: #ffffff 1px solid;
+    border: #02031b 1px solid;
     margin: 30px;
 }
 .product2:hover {
@@ -220,51 +219,47 @@ a {
     font-size: 30px;
     height: 60px;
     width: 100%;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: 60px;
     
 }
 
 button {
-    background-color: #2377a867;;
-    width: 350px;
-    height: 100px;
+    background-color: #041620;;
+    width: 250px;
+    height: 80px;
     border-radius: 20px;
-    border-right: #d8a9a9 1px solid;
-    border-bottom: #d8a9a9 2px solid;
     color: #ffffff;
     font-size: x-large;
-    margin-top: 70px;
-    margin-left: 470px;
+    margin-top: 80px;
+   border: 0px solidx;
 }
 
 .btn {
-
-    margin-left: 36%;
     background-color: #000000;
 }
 
 button:hover {
-    filter: opacity(30%);
+    filter: opacity(90%);
     transition: 1s;
-    width: 360px;
-    height: 110px;
-    background-color: #7a1d1d;
+    /* width: 360px;
+    height: 110px; */
+    background-color: #0a0e22ea;
 }
 
 
 
 button:active {
-    background-color: #26530c;
+    background-color: #0c2b53;
     filter: opacity(100%);
 }
 
 .footer {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
     padding-bottom: 20px;
     padding-top: 20px;
-    border-top: 1px solid#1b1b1b;
+    border-top: 1px solid#0602253d;
 }
 
 body::-webkit-scrollbar{
@@ -287,12 +282,12 @@ body::-webkit-scrollbar-thumb {
 
 .efeito{
     width: 100%;
-    height: 140px;
-    background-color: #2377a867;
+    height: 100px;
     display: flex;
-    justify-content: center;
+    justify-content: first baseline;
     align-items: center;
     margin-top: 30px;
+   
    /* border-top:  #ffffff 2px solid;
    border-bottom: #ffffff 2px solid;; */
 } 

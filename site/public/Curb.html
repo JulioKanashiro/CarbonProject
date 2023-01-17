@@ -38,7 +38,7 @@
                 <div class="h1-premiacao"><b>Atleta do Ano 2022</b></div>
             </div>
             <div class="box-not">
-                 <div class="tittle-atleta-ano"> Indicados:</div>
+              
                 <div class="not1">
                     <button class="product" style="background-image: url(./assets/TH_Curry-Night-Night.jpg);"
                         onclick="scurry()" id="crr">
@@ -57,13 +57,14 @@
                     </button>
                     <button class="product" style="  background-image: url(./assets/vinijr.jpg);" onclick="vini()" id="vn"><div id="verify4" style="display: none;"><img src="./assets/pngegg.png" alt="" width="95px"></div>
                     </button>
+                    <div id="bnt"><button onclick="votos()">Enviar Voto</button></div>
                 </div>
 
 
 
 
 
-                <div id="bnt"><button onclick="votos()">Confirmar Voto</button></div>
+
             </div>
 
 
@@ -84,8 +85,28 @@
     var idusuario = sessionStorage.ID_USUARIO
     var nomevoto = []
     function lebronj() {
-        if (nomevoto.indexOf('lebron') != -1) {
-            alert("você já escolheu esse jogador")
+
+        if (nomevoto.indexOf('benzema') != -1) {
+            nomevoto.shift()
+            bzm.style.border = "white 1px solid"
+           verify2.style.display = "none"
+        } 
+        
+        if (nomevoto.indexOf('vinijr') != -1) {
+          nomevoto.shift()
+            vn.style.border = "white 1px solid"
+           verify4.style.display = "none"
+            
+        }
+        if (nomevoto.indexOf('curry') != -1) {
+            nomevoto.shift()
+            crr.style.border = "white 1px solid"
+           verify.style.display = "none"
+        } 
+       if (nomevoto.indexOf('lebron') != -1) {
+            nomevoto.shift()
+            bron.style.border = "white 1px solid"
+           verify3.style.display = "none"
         } else if (nomevoto.indexOf('lebron') != -1|| nomevoto.indexOf('curry') != -1|| nomevoto.indexOf('vinijr') != -1|| nomevoto.indexOf('benzema') != -1) {
             alert("você já escolheu 1 jogador")
         } else if (nomevoto.indexOf('lebron') != -1) {
@@ -99,10 +120,31 @@
         
     }
     function scurry() {
+        if (nomevoto.indexOf('benzema') != -1) {
+            nomevoto.shift()
+            bzm.style.border = "white 1px solid"
+           verify2.style.display = "none"
+        } 
+        
+        if (nomevoto.indexOf('vinijr') != -1) {
+          nomevoto.shift()
+            vn.style.border = "white 1px solid"
+           verify4.style.display = "none"
+            
+        }
+       if (nomevoto.indexOf('lebron') != -1) {
+            nomevoto.shift()
+            bron.style.border = "white 1px solid"
+           verify3.style.display = "none"
+        } 
+
+
         if (nomevoto.indexOf('curry') != -1) {
-            alert("você já escolheu esse jogador")
-        } else if (nomevoto.indexOf('lebron') != -1|| nomevoto.indexOf('curry') != -1|| nomevoto.indexOf('vinijr') != -1|| nomevoto.indexOf('benzema') != -1) {
-            alert("você já escolheu 1 jogador") }
+            nomevoto.shift()
+            crr.style.border = "white 1px solid"
+           verify.style.display = "none"
+        }//else if (nomevoto.indexOf('lebron') != -1|| nomevoto.indexOf('curry') != -1|| nomevoto.indexOf('vinijr') != -1|| nomevoto.indexOf('benzema') != -1) {
+        //     alert("você já escolheu 1 jogador") }
         else {
             nomevoto.push('curry')
             crr.style.border = "#2377a8 7px solid"
@@ -111,8 +153,27 @@
      
     }
     function vini() {
+        if (nomevoto.indexOf('benzema') != -1) {
+            nomevoto.shift()
+            bzm.style.border = "white 1px solid"
+           verify2.style.display = "none"
+        } 
+
+        if (nomevoto.indexOf('curry') != -1) {
+            nomevoto.shift()
+            crr.style.border = "white 1px solid"
+           verify.style.display = "none"
+        } 
+       if (nomevoto.indexOf('lebron') != -1) {
+            nomevoto.shift()
+            bron.style.border = "white 1px solid"
+           verify3.style.display = "none"
+        } 
         if (nomevoto.indexOf('vinijr') != -1) {
-            alert("você já escolheu esse jogador")
+          nomevoto.shift()
+            vn.style.border = "white 1px solid"
+           verify4.style.display = "none"
+            
         } else if (nomevoto.indexOf('lebron') != -1|| nomevoto.indexOf('curry') != -1|| nomevoto.indexOf('vinijr') != -1|| nomevoto.indexOf('benzema') != -1) {
             alert("você já escolheu 1 jogador") }
        else {
@@ -123,14 +184,34 @@
        
     }
     function kbenzema() {
+        
+        if (nomevoto.indexOf('vinijr') != -1) {
+          nomevoto.shift()
+            vn.style.border = "white 1px solid"
+           verify4.style.display = "none"
+            
+        }
+        if (nomevoto.indexOf('curry') != -1) {
+            nomevoto.shift()
+            crr.style.border = "white 1px solid"
+           verify.style.display = "none"
+        } 
+       if (nomevoto.indexOf('lebron') != -1) {
+            nomevoto.shift()
+            bron.style.border = "white 1px solid"
+           verify3.style.display = "none"
+        } 
         if (nomevoto.indexOf('benzema') != -1) {
-            alert("você já escolheu esse jogador")
+            nomevoto.shift()
+            bzm.style.border = "white 1px solid"
+           verify2.style.display = "none"
         } else if (nomevoto.indexOf('lebron') != -1|| nomevoto.indexOf('curry') != -1|| nomevoto.indexOf('vinijr') != -1|| nomevoto.indexOf('benzema') != -1) {
             alert("você já escolheu 1 jogador") }
        else {
             nomevoto.push('benzema')
             bzm.style.border = "#2377a8 7px solid"
             verify2.style.display = "block"
+            verify4.style.display = "none"
         }
         
     }
